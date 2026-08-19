@@ -1,0 +1,54 @@
+﻿# Storefront Image Sources
+
+Source: Openverse API filtered by `license=cc0` and phone-focused title matching.
+
+- `images/storefront/phones/hub/top-deals.jpg`
+  - Creator: Negative Space
+  - Title: Smartphone Mobile
+  - Source: https://stocksnap.io/photo/smartphone-mobile-IU6HNPC2NT
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/phones/hub/all-phones.jpg`
+  - Creator: JESHOOTS.com
+  - Title: Mobile Smartphone
+  - Source: https://stocksnap.io/photo/mobile-smartphone-DLITZEAVJJ
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/phones/hub/android-phones.jpg`
+  - Creator: Adrianna Calvo
+  - Title: Iphone Smartphone
+  - Source: https://stocksnap.io/photo/iphone-smartphone-ODN23L0AC9
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/phones/hub/iphone.jpg`
+  - Creator: Negative Space
+  - Title: Smartphone Mobile
+  - Source: https://stocksnap.io/photo/smartphone-mobile-O4V3KXZI1T
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/phones/hub/budget-phones.jpg`
+  - Creator: Icons8 team
+  - Title: Woman Smartphone
+  - Source: https://stocksnap.io/photo/woman-smartphone-MLEPUKHYUU
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/phones/hub/camera-phones.jpg`
+  - Creator: Toni Hukkanen
+  - Title: Instagram Smartphone
+  - Source: https://stocksnap.io/photo/instagram-smartphone-FYBWKNX0L2
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/phones/hub/gaming-phones.jpg`
+  - Creator: Freestocks.org
+  - Title: Smartphone Cellphone
+  - Source: https://stocksnap.io/photo/smartphone-cellphone-J58JT39MOI
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/phones/hub/phone-accessories.jpg`
+  - Creator: JESHOOTS.com
+  - Title: Smartphone Mobile
+  - Source: https://stocksnap.io/photo/smartphone-mobile-2ZHFKWXCTQ
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/phones/promo/main.jpg`
+  - Creator: Shotstash.com
+  - Title: Mobile Smartphone
+  - Source: https://stocksnap.io/photo/mobile-smartphone-ASEQPBZMMX
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/phones/promo/side.jpg`
+  - Creator: Kaboompics.com
+  - Title: Mobile Smartphone
+  - Source: https://stocksnap.io/photo/mobile-smartphone-QFEXEVWKFD
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)

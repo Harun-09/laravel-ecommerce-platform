@@ -1,0 +1,54 @@
+﻿# Storefront Image Sources
+
+Source: Openverse API filtered by `license=cc0`.
+
+- `images/storefront/fashion/hub/top-deals.jpg`
+  - Creator: Hannah Morgan
+  - Title: Fashion Clothes
+  - Source: https://stocksnap.io/photo/fashion-clothes-ZN97ZIF3ZU
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/fashion/hub/all-fashion.jpg`
+  - Creator: Angelina Litvin
+  - Title: Fashion Clothes
+  - Source: https://stocksnap.io/photo/fashion-clothes-FUCDX0FBLZ
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/fashion/hub/mens-fashion.jpg`
+  - Creator: Chelsea Francis
+  - Title: Fashion Clothes
+  - Source: https://stocksnap.io/photo/fashion-clothes-0369993BB5
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/fashion/hub/womens-fashion.jpg`
+  - Creator: Daria Shevtsova
+  - Title: Fashion Clothes
+  - Source: https://stocksnap.io/photo/fashion-clothes-WTLBU65VI8
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/fashion/hub/kids-fashion.jpg`
+  - Creator: Terje Sollie
+  - Title: Fashion Clothes
+  - Source: https://stocksnap.io/photo/fashion-clothes-3WTQ3M15W8
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/fashion/hub/footwear.jpg`
+  - Creator: Terje Sollie
+  - Title: Fashion Clothes
+  - Source: https://stocksnap.io/photo/fashion-clothes-5GN7LHRH90
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/fashion/hub/bags-luggage.jpg`
+  - Creator: Kristin Hardwick
+  - Title: Fashion Clothing
+  - Source: https://stocksnap.io/photo/fashion-clothing-XSM5N2TADD
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/fashion/hub/watches.jpg`
+  - Creator: Snufkin
+  - Title: Fashion Clothes
+  - Source: https://stocksnap.io/photo/fashion-clothes-DJFN2AVSU6
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/fashion/promo/main.jpg`
+  - Creator: Michal Kulesza
+  - Title: Suit Tie
+  - Source: https://stocksnap.io/photo/suit-tie-OERP9XI9YB
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/fashion/promo/side.jpg`
+  - Creator: Michal Kulesza
+  - Title: Clothes Sweaters
+  - Source: https://stocksnap.io/photo/clothes-sweaters-OA0AFM3HYZ
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)

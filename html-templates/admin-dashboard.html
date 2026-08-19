@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard - Admin | NovaMart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/admin-layout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="admin-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">Nova<span>Mart</span></div>
+            <p>Admin Panel</p>
+        </div>
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <a href="admin-dashboard.html" class="nav-link active"><i class="fas fa-home"></i><span>Dashboard</span></a>
+            </div>
+            <div class="nav-section">
+                <div class="nav-section-title">E-Commerce</div>
+                <a href="#" class="nav-link"><i class="fas fa-shopping-bag"></i><span>Orders</span><span class="badge">12</span></a>
+                <a href="#" class="nav-link"><i class="fas fa-undo-alt"></i><span>Returns</span><span class="badge">3</span></a>
+                <a href="#" class="nav-link"><i class="fas fa-wallet"></i><span>Payouts</span><span class="badge">5</span></a>
+                <a href="#" class="nav-link"><i class="fas fa-chart-line"></i><span>Reports</span></a>
+                <a href="#" class="nav-link"><i class="far fa-comment-dots"></i><span>Messages</span><span class="badge">8</span></a>
+                <a href="#" class="nav-link"><i class="fas fa-bell"></i><span>Notifications</span><span class="badge">4</span></a>
+                <a href="#" class="nav-link"><i class="fas fa-shield-alt"></i><span>Audit Logs</span></a>
+                <a href="#" class="nav-link"><i class="fas fa-wave-square"></i><span>Observability</span></a>
+                <a href="#" class="nav-link"><i class="fas fa-box"></i><span>Products</span></a>
+                <a href="#" class="nav-link"><i class="fas fa-star-half-alt"></i><span>Reviews</span></a>
+                <a href="#" class="nav-link"><i class="fas fa-folder"></i><span>Categories</span></a>
+                <a href="#" class="nav-link"><i class="fas fa-images"></i><span>Banners</span></a>
+            </div>
+            <div class="nav-section">
+                <div class="nav-section-title">Users</div>
+                <a href="#" class="nav-link"><i class="fas fa-store"></i><span>Vendors</span><span class="badge">2</span></a>
+                <a href="#" class="nav-link"><i class="fas fa-users"></i><span>Users</span></a>
+            </div>
+            <div class="nav-section">
+                <div class="nav-section-title">Settings</div>
+                <a href="#" class="nav-link"><i class="fas fa-truck"></i><span>Shipping</span></a>
+                <a href="#" class="nav-link"><i class="fas fa-external-link-alt"></i><span>View Store</span></a>
+                <a href="#" class="nav-link"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="header-left-tools">
+                <button type="button" class="button-show-hide" aria-label="Toggle sidebar"><i class="fas fa-bars"></i></button>
+                <div class="search-box">
+                    <i class="fas fa-search" style="color: #94a3b8;"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+            <div class="header-actions">
+                <div class="notification-dropdown">
+                    <button type="button" class="header-btn" aria-label="Notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">4</span>
+                    </button>
+                </div>
+                <div class="user-menu">
+                    <div class="info">
+                        <div class="name">Admin User</div>
+                        <div class="role">super-admin</div>
+                    </div>
+                    <div class="avatar">A</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <main class="admin-content">
+            <div class="page-header">
+                <div>
+                    <h1>Dashboard</h1>
+                    <div class="breadcrumb">
+                        <a href="#">Home</a>
+                        <i class="fas fa-chevron-right" style="font-size: 10px;"></i>
+                        <span>Dashboard</span>
+                    </div>
+                </div>
+                <div><span style="color: #64748b;">Monday, July 14, 2025</span></div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="icon blue"><i class="fas fa-shopping-bag"></i></div>
+                    <div class="value">1,234</div>
+                    <div class="label">Total Orders</div>
+                    <div class="change up"><i class="fas fa-arrow-up"></i> 48 today</div>
+                </div>
+                <div class="stat-card">
+                    <div class="icon green"><i class="fas fa-dollar-sign"></i></div>
+                    <div class="value">৳5,67,890</div>
+                    <div class="label">Total Revenue</div>
+                    <div class="change up"><i class="fas fa-arrow-up"></i> ৳12,340 today</div>
+                </div>
+                <div class="stat-card">
+                    <div class="icon orange"><i class="fas fa-box"></i></div>
+                    <div class="value">3,456</div>
+                    <div class="label">Active Products</div>
+                </div>
+                <div class="stat-card">
+                    <div class="icon purple"><i class="fas fa-store"></i></div>
+                    <div class="value">89</div>
+                    <div class="label">Active Vendors</div>
+                    <div class="change" style="background: #fef3c7; color: #d97706;"><i class="fas fa-clock"></i> 5 pending</div>
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px;">
+                <!-- Recent Orders -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Recent Orders</h3>
+                        <a href="#" class="btn btn-sm btn-outline">View All</a>
+                    </div>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr><th>Order ID</th><th>Customer</th><th>Vendor</th><th>Total</th><th>Status</th><th>Date</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" style="color: var(--primary); font-weight: 500;">#ORD-1234</a></td>
+                                    <td><a href="#" style="color: var(--primary);">Ahmed Rahman</a></td>
+                                    <td>TechStore BD</td>
+                                    <td style="font-weight: 500;">৳4,500</td>
+                                    <td><span class="badge badge-warning">Pending</span></td>
+                                    <td style="color: #64748b;">2 hours ago</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" style="color: var(--primary); font-weight: 500;">#ORD-1233</a></td>
+                                    <td><a href="#" style="color: var(--primary);">Sara Khan</a></td>
+                                    <td>Fashion Hub</td>
+                                    <td style="font-weight: 500;">৳2,800</td>
+                                    <td><span class="badge badge-success">Delivered</span></td>
+                                    <td style="color: #64748b;">5 hours ago</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" style="color: var(--primary); font-weight: 500;">#ORD-1232</a></td>
+                                    <td><a href="#" style="color: var(--primary);">Karim Uddin</a></td>
+                                    <td>Home Appliances</td>
+                                    <td style="font-weight: 500;">৳15,200</td>
+                                    <td><span class="badge badge-info">Processing</span></td>
+                                    <td style="color: #64748b;">1 day ago</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" style="color: var(--primary); font-weight: 500;">#ORD-1231</a></td>
+                                    <td><a href="#" style="color: var(--primary);">Nusrat Jahan</a></td>
+                                    <td>Beauty Plus</td>
+                                    <td style="font-weight: 500;">৳3,499</td>
+                                    <td><span class="badge badge-danger">Cancelled</span></td>
+                                    <td style="color: #64748b;">1 day ago</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" style="color: var(--primary); font-weight: 500;">#ORD-1230</a></td>
+                                    <td><a href="#" style="color: var(--primary);">Rafiq Ahmed</a></td>
+                                    <td>Gadget World</td>
+                                    <td style="font-weight: 500;">৳8,750</td>
+                                    <td><span class="badge badge-success">Delivered</span></td>
+                                    <td style="color: #64748b;">2 days ago</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div>
+                    <div class="card" style="margin-bottom: 24px;">
+                        <div class="card-header"><h3>Order Status</h3></div>
+                        <div class="card-body">
+                            <div style="display: flex; flex-direction: column; gap: 12px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="display: flex; align-items: center; gap: 8px;"><span style="width: 10px; height: 10px; background: #eab308; border-radius: 50%;"></span>Pending</span>
+                                    <span style="font-weight: 600;">48</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="display: flex; align-items: center; gap: 8px;"><span style="width: 10px; height: 10px; background: #22c55e; border-radius: 50%;"></span>Delivered</span>
+                                    <span style="font-weight: 600;">892</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="display: flex; align-items: center; gap: 8px;"><span style="width: 10px; height: 10px; background: #ef4444; border-radius: 50%;"></span>Canceled</span>
+                                    <span style="font-weight: 600;">23</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header"><h3>Top Products</h3></div>
+                        <div class="card-body">
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid #f1f5f9;">
+                                <img src="images/products/electronics/samsung-s24.jpg" alt="" style="width: 48px; height: 48px; border-radius: 8px; object-fit: cover;">
+                                <div style="flex: 1; min-width: 0;">
+                                    <p style="font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Wireless Bluetooth Headphones</p>
+                                    <p style="font-size: 13px; color: #64748b;">312 sold</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid #f1f5f9;">
+                                <img src="images/products/fashion/denim-jeans.jpg" alt="" style="width: 48px; height: 48px; border-radius: 8px; object-fit: cover;">
+                                <div style="flex: 1; min-width: 0;">
+                                    <p style="font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Smartwatch Pro Max</p>
+                                    <p style="font-size: 13px; color: #64748b;">245 sold</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 12px; padding: 12px 0;">
+                                <img src="images/products/fitness/yoga-mat.jpg" alt="" style="width: 48px; height: 48px; border-radius: 8px; object-fit: cover;">
+                                <div style="flex: 1; min-width: 0;">
+                                    <p style="font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Premium Running Shoes</p>
+                                    <p style="font-size: 13px; color: #64748b;">189 sold</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

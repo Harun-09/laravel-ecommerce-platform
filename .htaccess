@@ -1,0 +1,26 @@
+# Disable directory listing
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+    
+    # Block access to .env and other sensitive files
+    RewriteRule ^\.env$ - [F,L]
+    RewriteRule ^\.env\..*$ - [F,L]
+    RewriteRule \.sql$ - [F,L]
+    RewriteRule ^composer\.(json|lock)$ - [F,L]
+
+    # --- SERVER LOGIC ---
+    # Redirect all requests to public folder
+    # This rule allows the root directory to handle requests by silently
+    # pointing them to the public/ directory.
+    RewriteCond %{REQUEST_URI} !^/e-commerce/public/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ public/$1 [L]
+
+</IfModule>

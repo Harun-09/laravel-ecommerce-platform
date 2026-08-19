@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@import './layouts/frontend-layout.css';
+@import './pages/home-page.css';
+@import './pages/product-show-page.css';
+@import './pages/category-page.css';
+@import './pages/static-pages.css';
+
+

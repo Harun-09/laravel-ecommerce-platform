@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1120,
+        "name": "Modern Living Room Sofa",
+        "price": 2160,
+        "oldPrice": null,
+        "rating": "3.8",
+        "reviews": 225,
+        "image": "/frontend/images/products/generated/modern_living_room_sofa.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1121,
+        "name": "Minimalist Kitchen Set",
+        "price": 1580,
+        "oldPrice": 2502,
+        "rating": "5.0",
+        "reviews": 58,
+        "image": "/frontend/images/products/generated/minimalist_kitchen_set.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1122,
+        "name": "Aesthetic Room Decor",
+        "price": 5385,
+        "oldPrice": null,
+        "rating": "3.9",
+        "reviews": 183,
+        "image": "/frontend/images/products/generated/aesthetic_room_decor.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1123,
+        "name": "Smart Rice Cooker 1.8L",
+        "price": 1043,
+        "oldPrice": 1420,
+        "rating": "5.0",
+        "reviews": 351,
+        "image": "/frontend/images/products/generated/smart_rice_cooker_1_8l.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1124,
+        "name": "Luxury Velvet Throw Pillows",
+        "price": 980,
+        "oldPrice": null,
+        "rating": "4.6",
+        "reviews": 111,
+        "image": "/frontend/images/products/generated/luxury_velvet_throw_pillows.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1125,
+        "name": "Ceramic Coffee Mug Set",
+        "price": 3490,
+        "oldPrice": null,
+        "rating": "3.8",
+        "reviews": 389,
+        "image": "/frontend/images/products/generated/ceramic_coffee_mug_set.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1126,
+        "name": "Non-Stick Cookware Set",
+        "price": 3364,
+        "oldPrice": null,
+        "rating": "3.9",
+        "reviews": 342,
+        "image": "/frontend/images/products/generated/non_stick_cookware_set.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1127,
+        "name": "Stainless Steel Cutlery Set",
+        "price": 4144,
+        "oldPrice": 5278,
+        "rating": "4.4",
+        "reviews": 71,
+        "image": "/frontend/images/products/generated/stainless_steel_cutlery_set.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1128,
+        "name": "Bamboo Cutting Board",
+        "price": 3789,
+        "oldPrice": 4696,
+        "rating": "4.3",
+        "reviews": 495,
+        "image": "/frontend/images/products/generated/bamboo_cutting_board.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1129,
+        "name": "Electric Kettle 1.7L",
+        "price": 3474,
+        "oldPrice": null,
+        "rating": "4.0",
+        "reviews": 363,
+        "image": "/frontend/images/products/generated/electric_kettle_1_7l.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1130,
+        "name": "Air Fryer 5.5L",
+        "price": 618,
+        "oldPrice": null,
+        "rating": "4.3",
+        "reviews": 128,
+        "image": "/frontend/images/products/generated/air_fryer_5_5l.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1131,
+        "name": "Blender with Glass Pitcher",
+        "price": 1686,
+        "oldPrice": null,
+        "rating": "3.7",
+        "reviews": 175,
+        "image": "/frontend/images/products/generated/blender_with_glass_pitcher.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1132,
+        "name": "Coffee Maker Machine",
+        "price": 4094,
+        "oldPrice": null,
+        "rating": "4.7",
+        "reviews": 175,
+        "image": "/frontend/images/products/generated/coffee_maker_machine.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1133,
+        "name": "Toaster 2-Slice",
+        "price": 2037,
+        "oldPrice": 3216,
+        "rating": "5.0",
+        "reviews": 244,
+        "image": "/frontend/images/products/generated/toaster_2_slice.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1134,
+        "name": "Microwave Oven 20L",
+        "price": 2741,
+        "oldPrice": 3893,
+        "rating": "4.5",
+        "reviews": 402,
+        "image": "/frontend/images/products/generated/microwave_oven_20l.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1135,
+        "name": "Memory Foam Mattress Topper",
+        "price": 1532,
+        "oldPrice": null,
+        "rating": "4.1",
+        "reviews": 148,
+        "image": "/frontend/images/products/generated/memory_foam_mattress_topper.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1136,
+        "name": "Cotton Bed Sheet Set",
+        "price": 3091,
+        "oldPrice": null,
+        "rating": "4.1",
+        "reviews": 495,
+        "image": "/frontend/images/products/generated/cotton_bed_sheet_set.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1137,
+        "name": "Plush Bath Towel Set",
+        "price": 1659,
+        "oldPrice": null,
+        "rating": "4.6",
+        "reviews": 439,
+        "image": "/frontend/images/products/generated/plush_bath_towel_set.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1138,
+        "name": "Aromatherapy Essential Oil Diffuser",
+        "price": 4502,
+        "oldPrice": null,
+        "rating": "3.9",
+        "reviews": 354,
+        "image": "/frontend/images/products/generated/aromatherapy_essential_oil_diffuser.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1139,
+        "name": "LED Desk Lamp with Wireless Charger",
+        "price": 1299,
+        "oldPrice": 1850,
+        "rating": "4.3",
+        "reviews": 22,
+        "image": "/frontend/images/products/generated/led_desk_lamp_with_wireless_charger.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1140,
+        "name": "Indoor Potted Plant",
+        "price": 1473,
+        "oldPrice": null,
+        "rating": "4.3",
+        "reviews": 456,
+        "image": "/frontend/images/products/generated/indoor_potted_plant.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1141,
+        "name": "Decorative Wall Mirror",
+        "price": 771,
+        "oldPrice": 934,
+        "rating": "4.1",
+        "reviews": 322,
+        "image": "/frontend/images/products/generated/decorative_wall_mirror.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1142,
+        "name": "Geometric Pattern Rug",
+        "price": 1986,
+        "oldPrice": null,
+        "rating": "4.2",
+        "reviews": 419,
+        "image": "/frontend/images/products/generated/geometric_pattern_rug.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1143,
+        "name": "Blackout Window Curtains",
+        "price": 2287,
+        "oldPrice": 3190,
+        "rating": "3.6",
+        "reviews": 355,
+        "image": "/frontend/images/products/generated/blackout_window_curtains.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1144,
+        "name": "Wooden Bookshelf",
+        "price": 562,
+        "oldPrice": null,
+        "rating": "4.0",
+        "reviews": 215,
+        "image": "/frontend/images/products/generated/wooden_bookshelf.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1145,
+        "name": "Ergonomic Office Chair",
+        "price": 1559,
+        "oldPrice": null,
+        "rating": "4.9",
+        "reviews": 48,
+        "image": "/frontend/images/products/generated/ergonomic_office_chair.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1146,
+        "name": "Foldable Storage Bins",
+        "price": 4974,
+        "oldPrice": 6943,
+        "rating": "4.0",
+        "reviews": 480,
+        "image": "/frontend/images/products/generated/foldable_storage_bins.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1147,
+        "name": "Laundry Hamper with Lid",
+        "price": 555,
+        "oldPrice": 754,
+        "rating": "4.9",
+        "reviews": 296,
+        "image": "/frontend/images/products/generated/laundry_hamper_with_lid.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1148,
+        "name": "Bathroom Accessories Set",
+        "price": 4410,
+        "oldPrice": 5505,
+        "rating": "4.0",
+        "reviews": 483,
+        "image": "/frontend/images/products/generated/bathroom_accessories_set.jpg",
+        "vendor": "HomeLiving Store"
+    },
+    {
+        "id": 1149,
+        "name": "Wall Mounted Floating Shelves",
+        "price": 3298,
+        "oldPrice": 3984,
+        "rating": "4.1",
+        "reviews": 285,
+        "image": "/frontend/images/products/generated/wall_mounted_floating_shelves.jpg",
+        "vendor": "HomeLiving Store"
+    }
+]

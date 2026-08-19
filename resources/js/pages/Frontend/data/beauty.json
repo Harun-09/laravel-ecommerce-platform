@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1000,
+        "name": "Luxury Fragrance 100ml",
+        "price": 4531,
+        "oldPrice": null,
+        "rating": "3.5",
+        "reviews": 501,
+        "image": "/frontend/images/products/generated/luxury_fragrance_100ml.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1001,
+        "name": "Vitamin C Brightening Serum",
+        "price": 5314,
+        "oldPrice": 8455,
+        "rating": "3.9",
+        "reviews": 90,
+        "image": "/frontend/images/products/generated/vitamin_c_brightening_serum.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1002,
+        "name": "Organic Skincare Routine",
+        "price": 5137,
+        "oldPrice": 7834,
+        "rating": "3.6",
+        "reviews": 332,
+        "image": "/frontend/images/products/generated/organic_skincare_routine.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1003,
+        "name": "Matte Liquid Lipstick",
+        "price": 1016,
+        "oldPrice": null,
+        "rating": "4.2",
+        "reviews": 162,
+        "image": "/frontend/images/products/generated/matte_liquid_lipstick.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1004,
+        "name": "Hydrating Face Wash",
+        "price": 2418,
+        "oldPrice": 3096,
+        "rating": "3.8",
+        "reviews": 342,
+        "image": "/frontend/images/products/generated/hydrating_face_wash.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1005,
+        "name": "Anti-Aging Night Cream",
+        "price": 4409,
+        "oldPrice": null,
+        "rating": "4.1",
+        "reviews": 31,
+        "image": "/frontend/images/products/generated/anti_aging_night_cream.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1006,
+        "name": "Charcoal Peel-Off Mask",
+        "price": 777,
+        "oldPrice": 1023,
+        "rating": "3.9",
+        "reviews": 328,
+        "image": "/frontend/images/products/generated/charcoal_peel_off_mask.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1007,
+        "name": "Hair Growth Serum",
+        "price": 3031,
+        "oldPrice": null,
+        "rating": "4.1",
+        "reviews": 359,
+        "image": "/frontend/images/products/generated/hair_growth_serum.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1008,
+        "name": "SPF 50 Sunscreen",
+        "price": 4800,
+        "oldPrice": 6413,
+        "rating": "4.6",
+        "reviews": 389,
+        "image": "/frontend/images/products/generated/spf_50_sunscreen.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1009,
+        "name": "Nourishing Body Lotion",
+        "price": 2265,
+        "oldPrice": 3308,
+        "rating": "3.5",
+        "reviews": 185,
+        "image": "/frontend/images/products/generated/nourishing_body_lotion.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1010,
+        "name": "Exfoliating Body Scrub",
+        "price": 1326,
+        "oldPrice": 1892,
+        "rating": "4.1",
+        "reviews": 381,
+        "image": "/frontend/images/products/generated/exfoliating_body_scrub.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1011,
+        "name": "Argan Oil Shampoo",
+        "price": 1623,
+        "oldPrice": 2295,
+        "rating": "3.7",
+        "reviews": 144,
+        "image": "/frontend/images/products/generated/argan_oil_shampoo.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1012,
+        "name": "Deep Conditioning Hair Mask",
+        "price": 1104,
+        "oldPrice": null,
+        "rating": "3.9",
+        "reviews": 112,
+        "image": "/frontend/images/products/generated/deep_conditioning_hair_mask.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1013,
+        "name": "Rose Water Toner",
+        "price": 2917,
+        "oldPrice": null,
+        "rating": "4.4",
+        "reviews": 177,
+        "image": "/frontend/images/products/generated/rose_water_toner.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1014,
+        "name": "Aloe Vera Gel",
+        "price": 1542,
+        "oldPrice": 2078,
+        "rating": "4.8",
+        "reviews": 401,
+        "image": "/frontend/images/products/generated/aloe_vera_gel.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1015,
+        "name": "Professional Makeup Brush Set",
+        "price": 1998,
+        "oldPrice": 3257,
+        "rating": "4.5",
+        "reviews": 490,
+        "image": "/frontend/images/products/generated/professional_makeup_brush_set.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1016,
+        "name": "Waterproof Mascara",
+        "price": 1476,
+        "oldPrice": 1897,
+        "rating": "5.0",
+        "reviews": 110,
+        "image": "/frontend/images/products/generated/waterproof_mascara.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1017,
+        "name": "Eye Shadow Palette",
+        "price": 3874,
+        "oldPrice": null,
+        "rating": "3.8",
+        "reviews": 131,
+        "image": "/frontend/images/products/generated/eye_shadow_palette.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1018,
+        "name": "Liquid Eyeliner Pen",
+        "price": 4117,
+        "oldPrice": 6592,
+        "rating": "4.7",
+        "reviews": 155,
+        "image": "/frontend/images/products/generated/liquid_eyeliner_pen.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1019,
+        "name": "Lip Balm with SPF",
+        "price": 4949,
+        "oldPrice": null,
+        "rating": "4.7",
+        "reviews": 157,
+        "image": "/frontend/images/products/generated/lip_balm_with_spf.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1020,
+        "name": "Tea Tree Essential Oil",
+        "price": 3839,
+        "oldPrice": null,
+        "rating": "4.7",
+        "reviews": 351,
+        "image": "/frontend/images/products/generated/tea_tree_essential_oil.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1021,
+        "name": "Collagen Peptides Powder",
+        "price": 4838,
+        "oldPrice": null,
+        "rating": "4.4",
+        "reviews": 239,
+        "image": "/frontend/images/products/generated/collagen_peptides_powder.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1022,
+        "name": "Hyaluronic Acid Serum",
+        "price": 664,
+        "oldPrice": null,
+        "rating": "4.4",
+        "reviews": 276,
+        "image": "/frontend/images/products/generated/hyaluronic_acid_serum.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1023,
+        "name": "Retinol Moisturizer",
+        "price": 2033,
+        "oldPrice": 2939,
+        "rating": "4.2",
+        "reviews": 280,
+        "image": "/frontend/images/products/generated/retinol_moisturizer.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1024,
+        "name": "Keratin Hair Treatment",
+        "price": 2651,
+        "oldPrice": null,
+        "rating": "4.3",
+        "reviews": 410,
+        "image": "/frontend/images/products/generated/keratin_hair_treatment.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1025,
+        "name": "Biotin Supplements",
+        "price": 4390,
+        "oldPrice": null,
+        "rating": "4.0",
+        "reviews": 25,
+        "image": "/frontend/images/products/generated/biotin_supplements.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1026,
+        "name": "Luxury Bath Bombs",
+        "price": 2290,
+        "oldPrice": 3580,
+        "rating": "4.0",
+        "reviews": 133,
+        "image": "/frontend/images/products/generated/luxury_bath_bombs.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1027,
+        "name": "Electric Facial Cleansing Brush",
+        "price": 3171,
+        "oldPrice": null,
+        "rating": "3.7",
+        "reviews": 444,
+        "image": "/frontend/images/products/generated/electric_facial_cleansing_brush.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1028,
+        "name": "Silk Sleep Mask",
+        "price": 2114,
+        "oldPrice": 2791,
+        "rating": "4.8",
+        "reviews": 130,
+        "image": "/frontend/images/products/generated/silk_sleep_mask.jpg",
+        "vendor": "Beauty Store"
+    },
+    {
+        "id": 1029,
+        "name": "Jade Roller & Gua Sha Set",
+        "price": 3078,
+        "oldPrice": null,
+        "rating": "4.1",
+        "reviews": 276,
+        "image": "/frontend/images/products/generated/jade_roller___gua_sha_set.jpg",
+        "vendor": "Beauty Store"
+    }
+]

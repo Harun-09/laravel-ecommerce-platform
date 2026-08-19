@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1060,
+        "name": "Smartphone 13 Pro Max",
+        "price": 2091,
+        "oldPrice": 3102,
+        "rating": "4.7",
+        "reviews": 281,
+        "image": "/frontend/images/products/generated/smartphone_13_pro_max.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1061,
+        "name": "UltraSlim Business Laptop",
+        "price": 4564,
+        "oldPrice": null,
+        "rating": "4.8",
+        "reviews": 240,
+        "image": "/frontend/images/products/generated/ultraslim_business_laptop.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1062,
+        "name": "Premium Noise-Cancelling Headphones",
+        "price": 2232,
+        "oldPrice": null,
+        "rating": "4.2",
+        "reviews": 369,
+        "image": "/frontend/images/products/generated/premium_noise_cancelling_headphones.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1063,
+        "name": "Smart Watch Series 8",
+        "price": 4988,
+        "oldPrice": 7325,
+        "rating": "3.8",
+        "reviews": 212,
+        "image": "/frontend/images/products/generated/smart_watch_series_8.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1064,
+        "name": "DSLR Camera 4K",
+        "price": 1883,
+        "oldPrice": null,
+        "rating": "3.7",
+        "reviews": 303,
+        "image": "/frontend/images/products/generated/dslr_camera_4k.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1065,
+        "name": "Wireless Earbuds Pro",
+        "price": 5030,
+        "oldPrice": null,
+        "rating": "4.8",
+        "reviews": 166,
+        "image": "/frontend/images/products/generated/wireless_earbuds_pro.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1066,
+        "name": "Samsung Galaxy S24 Ultra 5G",
+        "price": 4647,
+        "oldPrice": null,
+        "rating": "4.9",
+        "reviews": 453,
+        "image": "/frontend/images/products/generated/samsung_galaxy_s24_ultra_5g.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1067,
+        "name": "Apple MacBook Pro M3",
+        "price": 5162,
+        "oldPrice": 7383,
+        "rating": "4.3",
+        "reviews": 58,
+        "image": "/frontend/images/products/generated/apple_macbook_pro_m3.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1068,
+        "name": "4K Ultra HD Smart TV",
+        "price": 1725,
+        "oldPrice": null,
+        "rating": "4.9",
+        "reviews": 143,
+        "image": "/frontend/images/products/generated/4k_ultra_hd_smart_tv.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1069,
+        "name": "Gaming Console Series X",
+        "price": 1247,
+        "oldPrice": 2060,
+        "rating": "4.3",
+        "reviews": 459,
+        "image": "/frontend/images/products/generated/gaming_console_series_x.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1070,
+        "name": "Portable Bluetooth Speaker",
+        "price": 5399,
+        "oldPrice": 8215,
+        "rating": "4.0",
+        "reviews": 46,
+        "image": "/frontend/images/products/generated/portable_bluetooth_speaker.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1071,
+        "name": "Tablet Air 5th Gen",
+        "price": 530,
+        "oldPrice": 784,
+        "rating": "4.9",
+        "reviews": 207,
+        "image": "/frontend/images/products/generated/tablet_air_5th_gen.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1072,
+        "name": "Mechanical Gaming Keyboard",
+        "price": 4732,
+        "oldPrice": null,
+        "rating": "4.2",
+        "reviews": 354,
+        "image": "/frontend/images/products/generated/mechanical_gaming_keyboard.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1073,
+        "name": "Wireless Gaming Mouse",
+        "price": 2418,
+        "oldPrice": null,
+        "rating": "4.2",
+        "reviews": 265,
+        "image": "/frontend/images/products/generated/wireless_gaming_mouse.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1074,
+        "name": "External Hard Drive 2TB",
+        "price": 1659,
+        "oldPrice": 2603,
+        "rating": "4.4",
+        "reviews": 489,
+        "image": "/frontend/images/products/generated/external_hard_drive_2tb.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1075,
+        "name": "Solid State Drive 1TB",
+        "price": 817,
+        "oldPrice": null,
+        "rating": "4.6",
+        "reviews": 71,
+        "image": "/frontend/images/products/generated/solid_state_drive_1tb.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1076,
+        "name": "High-Speed Wi-Fi Router",
+        "price": 3366,
+        "oldPrice": null,
+        "rating": "4.1",
+        "reviews": 244,
+        "image": "/frontend/images/products/generated/high_speed_wi_fi_router.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1077,
+        "name": "Smart Home Security Camera",
+        "price": 2988,
+        "oldPrice": null,
+        "rating": "4.1",
+        "reviews": 130,
+        "image": "/frontend/images/products/generated/smart_home_security_camera.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1078,
+        "name": "Video Doorbell Pro",
+        "price": 2952,
+        "oldPrice": null,
+        "rating": "4.9",
+        "reviews": 209,
+        "image": "/frontend/images/products/generated/video_doorbell_pro.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1079,
+        "name": "Smart Thermostat",
+        "price": 3953,
+        "oldPrice": null,
+        "rating": "4.4",
+        "reviews": 100,
+        "image": "/frontend/images/products/generated/smart_thermostat.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1080,
+        "name": "Robot Vacuum Cleaner",
+        "price": 4965,
+        "oldPrice": 6413,
+        "rating": "4.7",
+        "reviews": 119,
+        "image": "/frontend/images/products/generated/robot_vacuum_cleaner.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1081,
+        "name": "Drone with 4K Camera",
+        "price": 3648,
+        "oldPrice": null,
+        "rating": "4.0",
+        "reviews": 132,
+        "image": "/frontend/images/products/generated/drone_with_4k_camera.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1082,
+        "name": "Action Camera Hero 11",
+        "price": 5017,
+        "oldPrice": null,
+        "rating": "4.1",
+        "reviews": 387,
+        "image": "/frontend/images/products/generated/action_camera_hero_11.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1083,
+        "name": "Virtual Reality Headset",
+        "price": 4226,
+        "oldPrice": 6872,
+        "rating": "4.0",
+        "reviews": 460,
+        "image": "/frontend/images/products/generated/virtual_reality_headset.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1084,
+        "name": "Curved Gaming Monitor",
+        "price": 5015,
+        "oldPrice": null,
+        "rating": "4.8",
+        "reviews": 109,
+        "image": "/frontend/images/products/generated/curved_gaming_monitor.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1085,
+        "name": "Professional Condenser Microphone",
+        "price": 772,
+        "oldPrice": null,
+        "rating": "4.3",
+        "reviews": 406,
+        "image": "/frontend/images/products/generated/professional_condenser_microphone.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1086,
+        "name": "USB-C Hub Multiport Adapter",
+        "price": 1071,
+        "oldPrice": 1510,
+        "rating": "4.8",
+        "reviews": 287,
+        "image": "/frontend/images/products/generated/usb_c_hub_multiport_adapter.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1087,
+        "name": "Wireless Charging Pad",
+        "price": 4964,
+        "oldPrice": null,
+        "rating": "3.5",
+        "reviews": 290,
+        "image": "/frontend/images/products/generated/wireless_charging_pad.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1088,
+        "name": "Power Bank 20000mAh",
+        "price": 915,
+        "oldPrice": null,
+        "rating": "4.0",
+        "reviews": 38,
+        "image": "/frontend/images/products/generated/power_bank_20000mah.jpg",
+        "vendor": "Electronics Store"
+    },
+    {
+        "id": 1089,
+        "name": "Digital Photo Frame",
+        "price": 3881,
+        "oldPrice": null,
+        "rating": "3.9",
+        "reviews": 414,
+        "image": "/frontend/images/products/generated/digital_photo_frame.jpg",
+        "vendor": "Electronics Store"
+    }
+]

@@ -1,0 +1,54 @@
+# Storefront Laptop Image Sources
+
+Source: Openverse API filtered by `license=cc0` and `source=stocksnap`.
+
+- `images/storefront/laptops/hub/top-deals.jpg`
+  - Creator: Lia Leslie
+  - Title: Macbook Laptop
+  - Source: https://stocksnap.io/photo/macbook-laptop-DWLWL9USBG
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/laptops/hub/all-laptops.jpg`
+  - Creator: Negative Space
+  - Title: Macbook Laptop
+  - Source: https://stocksnap.io/photo/macbook-laptop-UNB7V2H5L4
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/laptops/hub/windows-laptops.jpg`
+  - Creator: Marc Chouinard
+  - Title: Macbook Laptop
+  - Source: https://stocksnap.io/photo/macbook-laptop-DUAHA1V312
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/laptops/hub/macbooks.jpg`
+  - Creator: Pawel Kadysz
+  - Title: Macbook Laptop
+  - Source: https://stocksnap.io/photo/macbook-laptop-R66E2T133W
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/laptops/hub/chromebooks.jpg`
+  - Creator: Lauren Mancke
+  - Title: Macbook Laptop
+  - Source: https://stocksnap.io/photo/macbook-laptop-F7OLW2SG0C
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/laptops/hub/gaming-laptops.jpg`
+  - Creator: Wilfred Iven
+  - Title: Macbook Laptop
+  - Source: https://stocksnap.io/photo/macbook-laptop-RMATTE7HXJ
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/laptops/hub/copilot-laptops.jpg`
+  - Creator: Startup Stock Photos
+  - Title: Laptop Computer
+  - Source: https://stocksnap.io/photo/laptop-computer-4O4FZUVSIU
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/laptops/hub/surface-laptops.jpg`
+  - Creator: Startup Stock Photos
+  - Title: Macbook Laptop
+  - Source: https://stocksnap.io/photo/macbook-laptop-LEJ7HJ5BEA
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/laptops/promo/main.jpg`
+  - Creator: Wilfred Iven
+  - Title: Macbook Laptop
+  - Source: https://stocksnap.io/photo/macbook-laptop-HHZ5NPNR1T
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/laptops/promo/side.jpg`
+  - Creator: Leeroy
+  - Title: Macbook Laptop
+  - Source: https://stocksnap.io/photo/macbook-laptop-UDIGU0A2SN
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)

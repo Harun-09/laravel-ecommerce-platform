@@ -1,0 +1,125 @@
+﻿Route::middleware('guest')->group(function (): void {
+    Route::get('/supplier/apply', [SupplierOnboardingController::class, 'create'])
+        ->name('supplier.apply');
+
+    Route::post('/supplier/apply', [SupplierOnboardingController::class, 'store'])
+        ->name('supplier.apply.store');
+
+    Route::get('/register-supplier', [SupplierOnboardingController::class, 'create'])
+        ->name('supplier.register');
+
+    Route::post('/register-supplier', [SupplierOnboardingController::class, 'store'])
+        ->name('supplier.register.store');
+        
+    Route::get('/b2b/register', function () {
+        return Inertia\Inertia::render('Auth/B2BRegisterPlaceholder');
+    })->name('b2b.register');
+});
+
+Route::get('/checkout/success/{orderNumber}', [PaymentController::class, 'checkoutSuccess'])
+    ->name('checkout.success');
+
+Route::get('/rfq', [RfqRequestController::class, 'create'])
+    ->name('rfq.create');
+
+Route::get('/rfq/{product:slug}', [RfqRequestController::class, 'create'])
+    ->name('rfq.product');
+
+Route::post('/rfq', [RfqRequestController::class, 'store'])
+    ->name('rfq.store');
+
+Route::middleware('auth')->group(function () {
+    Route::post('/checkout/{orderNumber}/payment', [PaymentController::class, 'process'])
+        ->name('payment.process');
+});
+
+Route::prefix('payments')->name('payment.')->group(function (): void {
+    Route::get('/stripe/{orderNumber}/success', [PaymentController::class, 'stripeSuccess'])
+        ->name('stripe.success');
+
+    Route::get('/stripe/{orderNumber}/cancel', [PaymentController::class, 'stripeCancel'])
+        ->name('stripe.cancel');
+
+    Route::post('/stripe/webhook', [PaymentController::class, 'stripeWebhook'])
+        ->name('stripe.webhook');
+
+    Route::match(['get', 'post'], '/sslcommerz/{orderNumber}/success', [PaymentController::class, 'sslcommerzSuccess'])
+        ->name('sslcommerz.success');
+
+    Route::match(['get', 'post'], '/sslcommerz/{orderNumber}/fail', [PaymentController::class, 'sslcommerzFail'])
+        ->name('sslcommerz.fail');
+
+    Route::match(['get', 'post'], '/sslcommerz/{orderNumber}/cancel', [PaymentController::class, 'sslcommerzCancel'])
+        ->name('sslcommerz.cancel');
+
+    Route::post('/sslcommerz/ipn', [PaymentController::class, 'sslcommerzIPN'])
+        ->name('sslcommerz.ipn');
+});
+
+Route::get('/dashboard', DashboardController::class)->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth:b2c')->group(function () {
+    Route::get('/b2c/dashboard', [\App\Http\Controllers\B2CDashboardController::class, 'index'])->name('b2c.dashboard');
+});
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::redirect('/customer/profile', '/profile')->name('customer.profile.alias');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::patch('/profile/customer', [ProfileController::class, 'updateCustomer'])->name('profile.customer.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    Route::prefix('supplier')->name('supplier.')->middleware('role:supplier|admin')->group(function (): void {
+        Route::get('/products', [WorkspaceController::class, 'supplierProducts'])->name('products.index');
+        Route::get('/products/create', [WorkspaceController::class, 'supplierProductCreate'])->middleware('role:supplier')->name('products.create');
+        Route::get('/products/{product}/edit', [WorkspaceController::class, 'supplierProductEdit'])->middleware('role:supplier')->name('products.edit');
+        Route::redirect('/rfq-responses', '/commerce/rfq-responses')->name('rfq-responses.alias');
+        Route::get('/analytics', [\App\Http\Controllers\Supplier\AnalyticsController::class, 'index'])->name('analytics');
+    });
+
+    Route::redirect('/buyer/rfq-quotes', '/commerce/rfq-quotes')
+        ->middleware('role:buyer|admin')
+        ->name('buyer.rfq-quotes.alias');
+
+    Route::redirect('/buyer/tickets', '/support/tickets')->name('buyer.tickets.alias');
+
+    Route::redirect('/orders', '/commerce/orders')->name('orders.index.alias');
+    Route::get('/orders/{order}', function (Order $order) {
+        return redirect()->route('commerce.orders.index', ['search' => $order->order_number]);
+    })->middleware('role:buyer|supplier|admin')->name('orders.show.alias');
+
+    // Subscription & Repeat Orders
+    Route::post('/orders/{order}/repeat', [\App\Http\Controllers\OrderSubscriptionController::class, 'repeat'])->name('orders.repeat');
+    Route::post('/orders/{order}/toggle-subscription', [\App\Http\Controllers\OrderSubscriptionController::class, 'toggle'])->name('orders.toggle-subscription');
+
+    // Invoice Routes
+    Route::prefix('invoices')->name('invoices.')->group(function (): void {
+        Route::get('/', [InvoiceController::class, 'index'])->name('index');
+        Route::post('/generate/{orderId}', [InvoiceController::class, 'generate'])->name('generate');
+        Route::get('/{invoice}', [InvoiceController::class, 'show'])->name('show');
+        Route::get('/{invoice}/download', [InvoiceController::class, 'download'])->name('download');
+        Route::get('/{invoice}/preview', [InvoiceController::class, 'stream'])->name('preview');
+    });
+
+    Route::post('/feedback', [\App\Http\Controllers\FeedbackController::class, 'store'])->name('feedback.store');
+
+    Route::middleware('role:admin')->prefix('admin/trash')->name('admin.trash.')->group(function () {
+        Route::get('/', [\App\Http\Controllers\AdminTrashController::class, 'index'])->name('index');
+        Route::post('/{type}/{id}/restore', [\App\Http\Controllers\AdminTrashController::class, 'restore'])->name('restore');
+        Route::delete('/{type}/{id}/force-delete', [\App\Http\Controllers\AdminTrashController::class, 'forceDelete'])->name('force-delete');
+    });
+});
+
+Route::get('/template/{name}', function ($name) {
+    $componentName = str_replace(' ', '', ucwords(str_replace('-', ' ', $name)));
+    if ($componentName === 'Index') $componentName = 'Home';
+    return Inertia::render('Frontend/' . $componentName);
+})->name('template.page');
+
+Route::get('/{name}.html', function ($name) {
+    $componentName = str_replace(' ', '', ucwords(str_replace('-', ' ', $name)));
+    if ($componentName === 'Index') $componentName = 'Home';
+    return Inertia::render('Frontend/' . $componentName);
+})->name('template.html.page');
+
+require __DIR__.'/auth.php';

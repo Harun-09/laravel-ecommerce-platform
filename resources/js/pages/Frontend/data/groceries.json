@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1180,
+        "name": "Organic Premium Pasta",
+        "price": 4690,
+        "oldPrice": null,
+        "rating": "4.6",
+        "reviews": 57,
+        "image": "/frontend/images/products/generated/organic_premium_pasta.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1181,
+        "name": "Extra Virgin Olive Oil",
+        "price": 5499,
+        "oldPrice": 6780,
+        "rating": "3.9",
+        "reviews": 357,
+        "image": "/frontend/images/products/generated/extra_virgin_olive_oil.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1182,
+        "name": "Organic Quinoa",
+        "price": 4129,
+        "oldPrice": 5756,
+        "rating": "4.6",
+        "reviews": 12,
+        "image": "/frontend/images/products/generated/organic_quinoa.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1183,
+        "name": "Basmati Rice 5kg",
+        "price": 2688,
+        "oldPrice": null,
+        "rating": "4.0",
+        "reviews": 81,
+        "image": "/frontend/images/products/generated/basmati_rice_5kg.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1184,
+        "name": "Whole Wheat Bread",
+        "price": 5204,
+        "oldPrice": null,
+        "rating": "4.5",
+        "reviews": 392,
+        "image": "/frontend/images/products/generated/whole_wheat_bread.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1185,
+        "name": "Oats 1kg",
+        "price": 835,
+        "oldPrice": 1363,
+        "rating": "4.9",
+        "reviews": 323,
+        "image": "/frontend/images/products/generated/oats_1kg.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1186,
+        "name": "Almond Milk 1L",
+        "price": 4123,
+        "oldPrice": null,
+        "rating": "4.7",
+        "reviews": 24,
+        "image": "/frontend/images/products/generated/almond_milk_1l.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1187,
+        "name": "Soy Milk 1L",
+        "price": 3441,
+        "oldPrice": 5526,
+        "rating": "4.1",
+        "reviews": 273,
+        "image": "/frontend/images/products/generated/soy_milk_1l.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1188,
+        "name": "Organic Honey 500g",
+        "price": 3455,
+        "oldPrice": null,
+        "rating": "4.5",
+        "reviews": 252,
+        "image": "/frontend/images/products/generated/organic_honey_500g.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1189,
+        "name": "Peanut Butter Crunchy",
+        "price": 5111,
+        "oldPrice": 7390,
+        "rating": "4.7",
+        "reviews": 465,
+        "image": "/frontend/images/products/generated/peanut_butter_crunchy.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1190,
+        "name": "Strawberry Jam",
+        "price": 1458,
+        "oldPrice": null,
+        "rating": "4.4",
+        "reviews": 136,
+        "image": "/frontend/images/products/generated/strawberry_jam.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1191,
+        "name": "Dark Chocolate 70%",
+        "price": 2743,
+        "oldPrice": 4474,
+        "rating": "4.0",
+        "reviews": 114,
+        "image": "/frontend/images/products/generated/dark_chocolate_70_.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1192,
+        "name": "Green Tea Bags",
+        "price": 2989,
+        "oldPrice": null,
+        "rating": "4.9",
+        "reviews": 264,
+        "image": "/frontend/images/products/generated/green_tea_bags.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1193,
+        "name": "Roasted Coffee Beans",
+        "price": 2208,
+        "oldPrice": null,
+        "rating": "4.4",
+        "reviews": 93,
+        "image": "/frontend/images/products/generated/roasted_coffee_beans.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1194,
+        "name": "Pure Maple Syrup",
+        "price": 3775,
+        "oldPrice": 4696,
+        "rating": "3.8",
+        "reviews": 285,
+        "image": "/frontend/images/products/generated/pure_maple_syrup.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1195,
+        "name": "Himalayan Pink Salt",
+        "price": 3979,
+        "oldPrice": 5103,
+        "rating": "4.8",
+        "reviews": 325,
+        "image": "/frontend/images/products/generated/himalayan_pink_salt.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1196,
+        "name": "Black Pepper Grinder",
+        "price": 1091,
+        "oldPrice": 1622,
+        "rating": "5.0",
+        "reviews": 269,
+        "image": "/frontend/images/products/generated/black_pepper_grinder.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1197,
+        "name": "Organic Chia Seeds",
+        "price": 4081,
+        "oldPrice": null,
+        "rating": "3.6",
+        "reviews": 431,
+        "image": "/frontend/images/products/generated/organic_chia_seeds.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1198,
+        "name": "Mixed Nuts Roasted",
+        "price": 1738,
+        "oldPrice": null,
+        "rating": "4.2",
+        "reviews": 316,
+        "image": "/frontend/images/products/generated/mixed_nuts_roasted.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1199,
+        "name": "Dried Cranberries",
+        "price": 4247,
+        "oldPrice": null,
+        "rating": "4.9",
+        "reviews": 104,
+        "image": "/frontend/images/products/generated/dried_cranberries.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1200,
+        "name": "Cereal Flakes",
+        "price": 5394,
+        "oldPrice": 7980,
+        "rating": "4.5",
+        "reviews": 76,
+        "image": "/frontend/images/products/generated/cereal_flakes.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1201,
+        "name": "Tomato Ketchup",
+        "price": 1562,
+        "oldPrice": null,
+        "rating": "4.1",
+        "reviews": 498,
+        "image": "/frontend/images/products/generated/tomato_ketchup.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1202,
+        "name": "Mayonnaise",
+        "price": 3772,
+        "oldPrice": 6204,
+        "rating": "3.8",
+        "reviews": 228,
+        "image": "/frontend/images/products/generated/mayonnaise.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1203,
+        "name": "Mustard Sauce",
+        "price": 547,
+        "oldPrice": 815,
+        "rating": "3.9",
+        "reviews": 91,
+        "image": "/frontend/images/products/generated/mustard_sauce.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1204,
+        "name": "Spaghetti Sauce",
+        "price": 5318,
+        "oldPrice": null,
+        "rating": "4.8",
+        "reviews": 363,
+        "image": "/frontend/images/products/generated/spaghetti_sauce.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1205,
+        "name": "Canned Tuna in Olive Oil",
+        "price": 1992,
+        "oldPrice": 2795,
+        "rating": "4.5",
+        "reviews": 79,
+        "image": "/frontend/images/products/generated/canned_tuna_in_olive_oil.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1206,
+        "name": "Baked Beans",
+        "price": 2815,
+        "oldPrice": 4601,
+        "rating": "4.0",
+        "reviews": 228,
+        "image": "/frontend/images/products/generated/baked_beans.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1207,
+        "name": "Sweet Corn Canned",
+        "price": 2424,
+        "oldPrice": 4114,
+        "rating": "3.8",
+        "reviews": 471,
+        "image": "/frontend/images/products/generated/sweet_corn_canned.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1208,
+        "name": "Coconut Milk Can",
+        "price": 780,
+        "oldPrice": null,
+        "rating": "3.8",
+        "reviews": 216,
+        "image": "/frontend/images/products/generated/coconut_milk_can.jpg",
+        "vendor": "Groceries Store"
+    },
+    {
+        "id": 1209,
+        "name": "Organic Coconut Oil",
+        "price": 3352,
+        "oldPrice": 4840,
+        "rating": "4.3",
+        "reviews": 455,
+        "image": "/frontend/images/products/generated/organic_coconut_oil.jpg",
+        "vendor": "Groceries Store"
+    }
+]

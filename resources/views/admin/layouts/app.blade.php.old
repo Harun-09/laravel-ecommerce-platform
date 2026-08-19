@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>{{ $title ?? 'Dashboard' }} - Admin | NovaMart</title>
+
+    <link rel="stylesheet" href="{{ asset('assets/vendor/fontawesome/css/all.min.css') }}">
+    @vite(['resources/css/admin.css', 'resources/js/admin.js'])
+
+    @stack('styles')
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        @php
+            $user = auth()->user();
+            $isVendorOnly = $user->hasRole('vendor') && !$user->hasAnyRole(['admin', 'super-admin']);
+        @endphp
+        <div class="sidebar-header">
+            <div class="logo">Nova<span>Mart</span></div>
+            <p>{{ $isVendorOnly ? 'Vendor Panel' : 'Admin Panel' }}</p>
+        </div>
+
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                @if($isVendorOnly)
+                    @can('view vendor dashboard')
+                        <a href="{{ route('vendor.dashboard') }}"
+                            class="nav-link {{ request()->routeIs('vendor.dashboard') ? 'active' : '' }}">
+                            <i class="fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    @endcan
+                @else
+                    @can('view dashboard')
+                        <a href="{{ route('admin.dashboard') }}"
+                            class="nav-link {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">
+                            <i class="fas fa-home"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    @endcan
+                @endif
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">E-Commerce</div>
+
+                @if($isVendorOnly)
+                    @can('view reports')
+                        <a href="{{ route('vendor.reports.index') }}"
+                            class="nav-link {{ request()->routeIs('vendor.reports.*') ? 'active' : '' }}">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Reports</span>
+                        </a>
+                    @endcan
+                @else
+                    @can('view orders')
+                        <a href="{{ route('admin.orders.index') }}"
+                            class="nav-link {{ request()->routeIs('admin.orders.*') ? 'active' : '' }}">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span>Orders</span>
+                            @php $pendingOrders = \App\Models\Order::pending()->count(); @endphp
+                            @if($pendingOrders > 0)
+                                <span class="badge">{{ $pendingOrders }}</span>
+                            @endif
+                        </a>
+                    @endcan
+
+                    @can('view orders')
+                        <a href="{{ route('admin.returns.index') }}"
+                            class="nav-link {{ request()->routeIs('admin.returns.*') ? 'active' : '' }}">
+                            <i class="fas fa-undo-alt"></i>
+                            <span>Returns</span>
+                            @php $pendingReturns = \App\Models\ReturnRequest::query()->where('status', \App\Models\ReturnRequest::STATUS_REQUESTED)->count(); @endphp
+                            @if($pendingReturns > 0)
+                                <span class="badge">{{ $pendingReturns }}</span>
+                            @endif
+                        </a>
+                    @endcan
+
+                    @can('view payouts')
+                        <a href="{{ route('admin.payouts.index') }}"
+                            class="nav-link {{ request()->routeIs('admin.payouts.*') ? 'active' : '' }}">
+                            <i class="fas fa-wallet"></i>
+                            <span>Payouts</span>
+                            @php $pendingPayouts = \App\Models\VendorPayout::query()->whereIn('status', ['pending', 'processing'])->count(); @endphp
+                            @if($pendingPayouts > 0)
+                                <span class="badge">{{ $pendingPayouts }}</span>
+                            @endif
+                        </a>
+                    @endcan
+
+                    @can('view reports')
+                        <a href="{{ route('admin.reports.index') }}"
+                            class="nav-link {{ request()->routeIs('admin.reports.*') ? 'active' : '' }}">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Reports</span>
+                        </a>
+                    @endcan
+
+                    @if($user->hasRole('super-admin'))
+                        @can('view reports')
+                            <a href="{{ route('admin.audit-logs.index') }}"
+                                class="nav-link {{ request()->routeIs('admin.audit-logs.*') ? 'active' : '' }}">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Audit Logs</span>
+                            </a>
+
+                            <a href="{{ route('admin.observability.index') }}"
+                                class="nav-link {{ request()->routeIs('admin.observability.*') ? 'active' : '' }}">
+                                <i class="fas fa-wave-square"></i>
+                                <span>Observability</span>
+                            </a>
+                        @endcan
+                    @endif
+
+                    @can('view products')
+                        <a href="{{ route('admin.products.index') }}"
+                            class="nav-link {{ request()->routeIs('admin.products.*') ? 'active' : '' }}">
+                            <i class="fas fa-box"></i>
+                            <span>Products</span>
+                        </a>
+                    @endcan
+
+                    @can('view reviews')
+                        <a href="{{ route('admin.reviews.index') }}"
+                            class="nav-link {{ request()->routeIs('admin.reviews.*') ? 'active' : '' }}">
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>Reviews</span>
+                            @php $pendingReviews = \App\Domains\ECommerce\Models\Review::query()->where('is_approved', false)->count(); @endphp
+                            @if($pendingReviews > 0)
+                                <span class="badge">{{ $pendingReviews }}</span>
+                            @endif
+                        </a>
+                    @endcan
+
+                    @can('view categories')
+                        <a href="{{ route('admin.categories.index') }}"
+                            class="nav-link {{ request()->routeIs('admin.categories.*') ? 'active' : '' }}">
+                            <i class="fas fa-folder"></i>
+                            <span>Categories</span>
+                        </a>
+                    @endcan
+
+                    @can('view banners')
+                        <a href="{{ route('admin.banners.index') }}"
+                            class="nav-link {{ request()->routeIs('admin.banners.*') ? 'active' : '' }}">
+                            <i class="fas fa-images"></i>
+                            <span>Banners</span>
+                        </a>
+                    @endcan
+                @endif
+            </div>
+
+            @if(!$isVendorOnly && ($user->can('view vendors') || $user->can('view users')))
+                <div class="nav-section">
+                    <div class="nav-section-title">Users</div>
+
+                    @can('view vendors')
+                        <a href="{{ route('admin.vendors.index') }}"
+                            class="nav-link {{ request()->routeIs('admin.vendors.*') ? 'active' : '' }}">
+                            <i class="fas fa-store"></i>
+                            <span>Vendors</span>
+                            @php $pendingVendors = \App\Models\Vendor::pending()->count(); @endphp
+                            @if($pendingVendors > 0)
+                                <span class="badge">{{ $pendingVendors }}</span>
+                            @endif
+                        </a>
+                    @endcan
+
+                    @can('view users')
+                        <a href="{{ route('admin.users.index') }}"
+                            class="nav-link {{ request()->routeIs('admin.users.*') ? 'active' : '' }}">
+                            <i class="fas fa-users"></i>
+                            <span>Users</span>
+                        </a>
+                    @endcan
+                </div>
+            @endif
+
+            <div class="nav-section">
+                <div class="nav-section-title">Settings</div>
+
+                @if(!$isVendorOnly)
+                    @can('view settings')
+                        <a href="{{ route('admin.shipping.index') }}"
+                            class="nav-link {{ request()->routeIs('admin.shipping.*') ? 'active' : '' }}">
+                            <i class="fas fa-truck"></i>
+                            <span>Shipping</span>
+                        </a>
+                    @endcan
+                @endif
+
+                <a href="{{ route('home') }}" class="nav-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>View Store</span>
+                </a>
+
+                <form action="{{ route('logout') }}" method="POST" style="margin: 0;">
+                    @csrf
+                    <button type="submit" class="nav-link"
+                        style="width: 100%; border: none; background: none; cursor: pointer; text-align: left;">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Logout</span>
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="search-box">
+                <i class="fas fa-search" style="color: #94a3b8;"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <div class="header-actions">
+                <button class="header-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </button>
+
+                <div class="user-menu">
+                    <div class="info">
+                        <div class="name">{{ auth()->user()->name }}</div>
+                        <div class="role">{{ auth()->user()->getRoleNames()->first() }}</div>
+                    </div>
+                    <div class="avatar">{{ substr(auth()->user()->name, 0, 1) }}</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <main class="admin-content">
+            @if(session('success'))
+                <div class="alert alert-success">
+                    <i class="fas fa-check-circle"></i>
+                    {{ session('success') }}
+                </div>
+            @endif
+
+            @if(session('error'))
+                <div class="alert alert-error">
+                    <i class="fas fa-exclamation-circle"></i>
+                    {{ session('error') }}
+                </div>
+            @endif
+
+            @yield('content')
+        </main>
+    </div>
+    @stack('scripts')
+</body>
+
+</html>
+
+

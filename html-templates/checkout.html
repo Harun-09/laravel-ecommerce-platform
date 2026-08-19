@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout - NovaMart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/frontend.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body data-route-name="home">
+    <header class="header">
+        <div class="header-top"><div class="container header-top-row"><div class="header-top-links"><a href="outlet.html">Best Buy Outlet</a><a href="business.html">Best Buy Business</a></div><div class="header-top-right"><details class="pref-switcher"><summary class="pref-trigger"><span class="pref-current">EN</span><span class="pref-current">BDT</span><i class="fas fa-angle-down"></i></summary><div class="pref-dropdown-menu"><p class="pref-section-title">Change Language</p><button class="pref-option active"><span class="pref-radio"><i class="fas fa-dot-circle"></i></span><span>English<small>- EN</small></span></button><button class="pref-option"><span class="pref-radio"><i class="far fa-circle"></i></span><span>Bangla<small>- BN</small></span></button><div class="pref-divider"></div><p class="pref-section-title">Change Currency</p><button class="pref-option active"><span class="pref-radio"><i class="fas fa-dot-circle"></i></span><span>৳ - BDT<small>- Bangladeshi Taka</small></span></button><button class="pref-option"><span class="pref-radio"><i class="far fa-circle"></i></span><span>$ - USD<small>- US Dollar</small></span></button></div></details><a href="tel:+8801701885707"><i class="fas fa-phone"></i> +8801701885707</a><a href="order-status.html">Order Status</a><a href="help.html">Help</a></div></div></div>
+        <div class="header-main"><div class="container header-main-row"><div class="header-main-left"><a href="index.html" class="logo">Nova<span>Mart</span></a><a href="gift-ideas.html" class="menu-launcher"><i class="fas fa-bars"></i> Menu</a></div><form class="search-box"><input type="text" name="q" placeholder="Search NovaMart" autocomplete="off"><button type="submit"><i class="fas fa-search"></i></button><div class="search-suggestions" hidden></div></form><div class="header-actions"><a href="#"><i class="fas fa-gift"></i><span>Gift Ideas</span></a><a href="login.html"><i class="fas fa-user"></i><span>Sign in</span></a><a href="wishlist.html"><i class="fas fa-heart"></i><span>Saved Items</span></a><a href="cart.html" class="cart-badge"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span><small>Cart</small></a></div></div></div>
+        <div class="header-utility"><div class="container header-utility-row"><div class="header-utility-links"><a href="top-deals.html">Top Deals</a><a href="deal-of-the-day.html">Deal of the Day</a><a href="discover.html">Discover</a><a href="memberships.html">My NovaMart Memberships</a><a href="credit-cards.html">Credit Cards</a><a href="gift-cards.html">Gift Cards</a></div><div class="header-utility-links"><a href="recently-viewed.html">Recently Viewed</a></div></div></div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="products.html"><i class="fas fa-th-large"></i> Shop All Departments</a></li>
+                <li><a href="products.html">Electronics</a></li>
+                <li><a href="products.html">Fashion</a></li>
+                <li><a href="products.html">Home & Living</a></li>
+                <li><a href="products.html">Beauty</a></li>
+                <li><a href="products.html">Sports</a></li>
+                <li><a href="products.html">Groceries</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container section">
+        <h1 style="font-size: 28px; font-weight: 700; margin-bottom: 30px;">Checkout</h1>
+        <div style="display: grid; grid-template-columns: 1fr 400px; gap: 30px;">
+            <div>
+                <div class="card" style="padding: 24px; margin-bottom: 24px;">
+                    <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 20px;"><i class="fas fa-truck" style="color: #6366f1; margin-right: 8px;"></i>Shipping Information</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;"><div class="form-group"><label>Full Name *</label><input type="text" class="form-control" value="Ahmed Rahman" required></div><div class="form-group"><label>Phone Number *</label><input type="tel" class="form-control" value="01701885707" required></div></div>
+                    <div class="form-group"><label>Email Address</label><input type="email" class="form-control" value="ahmed@email.com"></div>
+                    <div class="form-group"><label>Address *</label><textarea class="form-control" rows="2" required>House 12, Road 5, Gulshan-1</textarea></div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;"><div class="form-group"><label>City *</label><select class="form-control" required><option>Dhaka</option><option>Chittagong</option><option>Sylhet</option></select></div><div class="form-group"><label>Postal Code</label><input type="text" class="form-control" value="1212"></div></div>
+                </div>
+                <div class="card" style="padding: 24px; margin-bottom: 24px;">
+                    <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 20px;"><i class="fas fa-shipping-fast" style="color: #6366f1; margin-right: 8px;"></i>Shipping Method</h3>
+                    <div style="margin-bottom: 14px; display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; background: #eff6ff; border-radius: 999px;"><i class="fas fa-map-marker-alt" style="color: #2563eb;"></i><span style="font-size: 13px; color: #1e40af; font-weight: 600;">Delivery Zone:</span><span style="font-size: 13px; color: #1d4ed8;">Dhaka Metro</span></div>
+                    <label style="display: flex; align-items: center; justify-content: space-between; padding: 16px; border: 2px solid #0046be; border-radius: 8px; margin-bottom: 12px; cursor: pointer;"><div style="display: flex; align-items: center; gap: 12px;"><input type="radio" name="shipping_method" checked><div><p style="font-weight: 600;">Standard Delivery</p><p style="font-size: 13px; color: #6b7280;">Est. delivery: 3-5 days</p></div></div><div style="text-align: right;"><p style="font-weight: 600; color: #6366f1;">FREE</p></div></label>
+                    <label style="display: flex; align-items: center; justify-content: space-between; padding: 16px; border: 2px solid #e5e7eb; border-radius: 8px; cursor: pointer;"><div style="display: flex; align-items: center; gap: 12px;"><input type="radio" name="shipping_method"><div><p style="font-weight: 600;">Express Delivery</p><p style="font-size: 13px; color: #6b7280;">Est. delivery: 1-2 days</p></div></div><div style="text-align: right;"><p style="font-weight: 600; color: #6366f1;">৳150</p></div></label>
+                </div>
+                <div class="card" style="padding: 24px; margin-bottom: 24px;">
+                    <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 20px;"><i class="fas fa-credit-card" style="color: #6366f1; margin-right: 8px;"></i>Payment Method</h3>
+                    <div style="display: grid; gap: 12px;">
+                        <label style="display: flex; align-items: center; gap: 12px; padding: 16px; border: 2px solid #0046be; border-radius: 8px; cursor: pointer;"><input type="radio" name="payment_method" checked><i class="fas fa-money-bill-wave" style="font-size: 24px; color: #16a34a;"></i><div><p style="font-weight: 600;">Cash on Delivery</p><p style="font-size: 13px; color: #6b7280;">Pay when you receive your order</p></div></label>
+                        <label style="display: flex; align-items: center; gap: 12px; padding: 16px; border: 2px solid #e5e7eb; border-radius: 8px; cursor: pointer;"><input type="radio" name="payment_method"><i class="fas fa-credit-card" style="font-size: 24px; color: #635bff;"></i><div><p style="font-weight: 600;">Stripe (Card Payment)</p><p style="font-size: 13px; color: #6b7280;">Visa, MasterCard, and international cards</p></div></label>
+                        <label style="display: flex; align-items: center; gap: 12px; padding: 16px; border: 2px solid #e5e7eb; border-radius: 8px; cursor: pointer;"><input type="radio" name="payment_method"><i class="fas fa-credit-card" style="font-size: 24px; color: #e5383b;"></i><div><p style="font-weight: 600;">SSLCOMMERZ (Online Payment)</p><p style="font-size: 13px; color: #6b7280;">bKash, Nagad, Visa, MasterCard & more</p></div></label>
+                    </div>
+                </div>
+                <div class="card" style="padding: 24px;">
+                    <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 20px;"><i class="fas fa-sticky-note" style="color: #6366f1; margin-right: 8px;"></i>Order Notes (Optional)</h3>
+                    <textarea class="form-control" rows="3" placeholder="Any special instructions for delivery..."></textarea>
+                </div>
+            </div>
+            <div>
+                <div class="card" style="padding: 24px; position: sticky; top: 100px;">
+                    <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 20px;">Order Summary</h3>
+                    <div style="max-height: 300px; overflow-y: auto; margin-bottom: 20px;">
+                        <div style="display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid #f3f4f6;"><img src="images/products/electronics/samsung-s24.jpg" alt="" style="width: 60px; height: 60px; object-fit: cover; border-radius: 6px;"><div style="flex: 1;"><p style="font-size: 14px; font-weight: 500;">Samsung Galaxy S24 Ultra</p><p style="font-size: 13px; color: #6b7280;">Qty: 1</p></div><p style="font-weight: 600;">৳89,999</p></div>
+                        <div style="display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid #f3f4f6;"><img src="images/products/fashion/cotton-tshirt.jpg" alt="" style="width: 60px; height: 60px; object-fit: cover; border-radius: 6px;"><div style="flex: 1;"><p style="font-size: 14px; font-weight: 500;">Premium Cotton T-Shirt</p><p style="font-size: 13px; color: #6b7280;">Qty: 2</p></div><p style="font-weight: 600;">৳1,598</p></div>
+                    </div>
+                    <div style="border-top: 1px solid #e5e7eb; padding-top: 16px;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;"><span style="color: #6b7280;">Subtotal</span><span>৳91,597</span></div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;"><span style="color: #6b7280;">Shipping</span><span>FREE</span></div>
+                        <div style="display: flex; justify-content: space-between; padding-top: 16px; border-top: 1px solid #e5e7eb; margin-top: 16px;"><span style="font-size: 18px; font-weight: 600;">Total</span><span style="font-size: 24px; font-weight: 700; color: #6366f1;">৳91,597</span></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 24px; padding: 16px; font-size: 16px;"><i class="fas fa-lock" style="margin-right: 8px;"></i> Place Order</button>
+                    <p style="text-align: center; font-size: 13px; color: #6b7280; margin-top: 16px;">By placing this order, you agree to our <a href="#" style="color: #6366f1;">Terms & Conditions</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div><a href="index.html" class="logo" style="font-size: 32px;">Nova<span style="color: var(--secondary);">Mart</span></a><p style="color: #9ca3af; margin-top: 16px; line-height: 1.8;">Bangladesh's leading multi-vendor e-commerce platform. Shop with confidence and enjoy the best deals on thousands of products.</p><div class="social-links"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div></div>
+                <div><h4>Quick Links</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="#">Terms & Conditions</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Return Policy</a></li></ul></div>
+                <div><h4>My Account</h4><ul><li><a href="login.html">Login</a></li><li><a href="register.html">Register</a></li><li><a href="products.html">Browse Products</a></li><li><a href="cart.html">Shopping Cart</a></li></ul></div>
+                <div><h4>Contact Info</h4><ul><li><i class="fas fa-map-marker-alt"></i> Gulshan, Dhaka, Bangladesh</li><li><i class="fas fa-phone"></i> +8801701885707</li><li><i class="fas fa-envelope"></i> info@novamart.com</li><li><i class="fas fa-clock"></i> Sat-Thu: 9:00 AM - 9:00 PM</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2025 NovaMart. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+
+    <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <script>
+        window.storefrontConfig = { currency: { code: 'BDT', symbol: '৳', symbol_position: 'prefix', decimals: 0, rate: 1 }, endpoints: { cartCount: '#', cartAdd: '#', wishlistToggle: '#' } };
+        function convertStoreMoney(a) { return Number(a); }
+        function formatStoreMoney(a) { return '৳' + Number(a).toLocaleString(); }
+        function notifyUser(m, t) { var c = document.getElementById('toast-container'); if (!c) return; var toast = document.createElement('div'); toast.className = 'toast-notice toast-' + (t || 'success'); toast.innerHTML = '<span>' + m + '</span><button type="button" class="toast-close" onclick="this.parentElement.remove()">x</button>'; c.appendChild(toast); setTimeout(function() { toast.remove(); }, 3500); }
+        function updateCartCount() { var c = document.getElementById('cart-count'); if (c) { c.textContent = parseInt(c.textContent || 0) + 1; } }
+        function addToCart(id) { notifyUser('Product added to cart!', 'success'); updateCartCount(); }
+        function toggleWishlist(id, btn) { if (btn) btn.style.color = btn.style.color === 'rgb(239, 68, 68)' ? '' : '#ef4444'; notifyUser('Wishlist updated.', 'success'); }
+        // Hero slider
+        (function() { var s = document.querySelector('[data-hero-slider]'); if (!s) return; var slides = Array.from(s.querySelectorAll('[data-hero-slide]')); if (slides.length <= 1) return; var dots = Array.from(document.querySelectorAll('[data-hero-dot]')); var prev = document.querySelector('[data-hero-prev]'); var next = document.querySelector('[data-hero-next]'); var idx = 0, timer; function go(i) { idx = (i + slides.length) % slides.length; slides.forEach(function(sl, j) { sl.classList.toggle('is-active', j === idx); }); dots.forEach(function(d, j) { d.classList.toggle('is-active', j === idx); }); } function start() { clearInterval(timer); timer = setInterval(function() { go(idx + 1); }, 6000); } dots.forEach(function(d) { d.addEventListener('click', function() { go(Number(d.getAttribute('data-hero-dot'))); start(); }); }); if (prev) prev.addEventListener('click', function() { go(idx - 1); start(); }); if (next) next.addEventListener('click', function() { go(idx + 1); start(); }); var hero = document.getElementById('hero-banner-pick'); if (hero) { hero.addEventListener('mouseenter', function() { clearInterval(timer); }); hero.addEventListener('mouseleave', start); } start(); })();
+        // Product card navigation
+        document.addEventListener('click', function(e) { var c = e.target.closest('.product-card[data-product-url]'); if (!c) return; if (e.target.closest('a, button, input, select, textarea, label')) return; var d = c.dataset.productUrl; if (d) window.location.href = d; });
+        // Newsletter
+        (function() { var f = document.getElementById('home-newsletter-form'); if (!f) return; f.addEventListener('submit', function(e) { e.preventDefault(); var em = document.getElementById('home-newsletter-email'); if (em && em.value) { notifyUser('Thanks! You are subscribed to product deal alerts.', 'success'); em.value = ''; } }); })();
+        // Flash timer
+        (function() { var t = document.getElementById('flash-timer'); if (!t) return; var p = t.textContent.split(':'); var sec = parseInt(p[0]) * 3600 + parseInt(p[1]) * 60 + parseInt(p[2]); setInterval(function() { if (sec <= 0) return; sec--; var h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = sec % 60; t.textContent = String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0'); }, 1000); })();
+    </script>
+</body>
+</html>

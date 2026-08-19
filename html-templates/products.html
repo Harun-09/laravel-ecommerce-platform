@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All Products - NovaMart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/frontend.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body data-route-name="home">
+    <header class="header">
+        <div class="header-top"><div class="container header-top-row"><div class="header-top-links"><a href="outlet.html">Best Buy Outlet</a><a href="business.html">Best Buy Business</a></div><div class="header-top-right"><details class="pref-switcher"><summary class="pref-trigger"><span class="pref-current">EN</span><span class="pref-current">BDT</span><i class="fas fa-angle-down"></i></summary><div class="pref-dropdown-menu"><p class="pref-section-title">Change Language</p><button class="pref-option active"><span class="pref-radio"><i class="fas fa-dot-circle"></i></span><span>English<small>- EN</small></span></button><button class="pref-option"><span class="pref-radio"><i class="far fa-circle"></i></span><span>Bangla<small>- BN</small></span></button><div class="pref-divider"></div><p class="pref-section-title">Change Currency</p><button class="pref-option active"><span class="pref-radio"><i class="fas fa-dot-circle"></i></span><span>৳ - BDT<small>- Bangladeshi Taka</small></span></button><button class="pref-option"><span class="pref-radio"><i class="far fa-circle"></i></span><span>$ - USD<small>- US Dollar</small></span></button></div></details><a href="tel:+8801701885707"><i class="fas fa-phone"></i> +8801701885707</a><a href="order-status.html">Order Status</a><a href="help.html">Help</a></div></div></div>
+        <div class="header-main"><div class="container header-main-row"><div class="header-main-left"><a href="index.html" class="logo">Nova<span>Mart</span></a><a href="gift-ideas.html" class="menu-launcher"><i class="fas fa-bars"></i> Menu</a></div><form class="search-box"><input type="text" name="q" placeholder="Search NovaMart" autocomplete="off"><button type="submit"><i class="fas fa-search"></i></button><div class="search-suggestions" hidden></div></form><div class="header-actions"><a href="#"><i class="fas fa-gift"></i><span>Gift Ideas</span></a><a href="login.html"><i class="fas fa-user"></i><span>Sign in</span></a><a href="wishlist.html"><i class="fas fa-heart"></i><span>Saved Items</span></a><a href="cart.html" class="cart-badge"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span><small>Cart</small></a></div></div></div>
+        <div class="header-utility"><div class="container header-utility-row"><div class="header-utility-links"><a href="top-deals.html">Top Deals</a><a href="deal-of-the-day.html">Deal of the Day</a><a href="discover.html">Discover</a><a href="memberships.html">My NovaMart Memberships</a><a href="credit-cards.html">Credit Cards</a><a href="gift-cards.html">Gift Cards</a></div><div class="header-utility-links"><a href="recently-viewed.html">Recently Viewed</a></div></div></div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="products.html"><i class="fas fa-th-large"></i> Shop All Departments</a></li>
+                <li><a href="products.html">Electronics</a></li>
+                <li><a href="products.html">Fashion</a></li>
+                <li><a href="products.html">Home & Living</a></li>
+                <li><a href="products.html">Beauty</a></li>
+                <li><a href="products.html">Sports</a></li>
+                <li><a href="products.html">Groceries</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container section">
+        <div style="display: flex; gap: 30px;">
+            <aside style="width: 280px; flex-shrink: 0;">
+                <div class="card" style="padding: 24px;">
+                    <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 20px;">Filters</h3>
+                    <form>
+                        <div style="margin-bottom: 24px;"><h4 style="font-size: 14px; font-weight: 600; margin-bottom: 12px;">Categories</h4>
+                            <div style="margin-bottom: 8px;"><label style="display: flex; align-items: center; gap: 8px; cursor: pointer;"><input type="radio" name="category" style="width: 16px; height: 16px;"><span style="font-size: 14px;">Electronics</span></label></div>
+                            <div style="margin-bottom: 8px;"><label style="display: flex; align-items: center; gap: 8px; cursor: pointer;"><input type="radio" name="category" style="width: 16px; height: 16px;"><span style="font-size: 14px;">Fashion</span></label></div>
+                            <div style="margin-bottom: 8px;"><label style="display: flex; align-items: center; gap: 8px; cursor: pointer;"><input type="radio" name="category" style="width: 16px; height: 16px;"><span style="font-size: 14px;">Home & Living</span></label></div>
+                            <div style="margin-bottom: 8px;"><label style="display: flex; align-items: center; gap: 8px; cursor: pointer;"><input type="radio" name="category" style="width: 16px; height: 16px;"><span style="font-size: 14px;">Beauty & Health</span></label></div>
+                            <div style="margin-bottom: 8px;"><label style="display: flex; align-items: center; gap: 8px; cursor: pointer;"><input type="radio" name="category" style="width: 16px; height: 16px;"><span style="font-size: 14px;">Sports & Outdoors</span></label></div>
+                            <div style="margin-bottom: 8px;"><label style="display: flex; align-items: center; gap: 8px; cursor: pointer;"><input type="radio" name="category" style="width: 16px; height: 16px;"><span style="font-size: 14px;">Groceries</span></label></div>
+                        </div>
+                        <div style="margin-bottom: 24px;"><h4 style="font-size: 14px; font-weight: 600; margin-bottom: 12px;">Price Range</h4><div style="display: flex; gap: 12px;"><input type="number" placeholder="Min" style="width: 100%; padding: 10px; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 14px;"><input type="number" placeholder="Max" style="width: 100%; padding: 10px; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 14px;"></div></div>
+                        <div style="margin-bottom: 24px;"><h4 style="font-size: 14px; font-weight: 600; margin-bottom: 12px;">Rating</h4>
+                            <div style="margin-bottom: 8px;"><label style="display: flex; align-items: center; gap: 8px; cursor: pointer;"><input type="radio" name="rating" style="width: 16px; height: 16px;"><span style="color: #facc15;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span style="font-size: 13px; color: #6b7280;">& up</span></label></div>
+                            <div style="margin-bottom: 8px;"><label style="display: flex; align-items: center; gap: 8px; cursor: pointer;"><input type="radio" name="rating" style="width: 16px; height: 16px;"><span style="color: #facc15;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span><span style="font-size: 13px; color: #6b7280;">& up</span></label></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Apply Filters</button>
+                        <a href="#" style="display: block; text-align: center; margin-top: 12px; color: #6b7280; font-size: 14px;">Clear All</a>
+                    </form>
+                </div>
+            </aside>
+            <div style="flex: 1;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px;"><div><h1 style="font-size: 24px; font-weight: 700;">All Products</h1><p style="color: #6b7280; font-size: 14px; margin-top: 4px;">Showing 128 products</p></div><div style="display: flex; align-items: center; gap: 12px;"><span style="font-size: 14px; color: #6b7280;">Sort by:</span><select style="padding: 10px 16px; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 14px;"><option>Newest</option><option>Price: Low to High</option><option>Price: High to Low</option><option>Most Popular</option><option>Best Rating</option></select></div></div>
+                <div class="grid grid-4">
+
+                    <div class="product-card" data-product-url="product.html" role="link" tabindex="0">
+                        <a href="product.html"><img src="images/products/premium/headphones.jpg" alt="Premium Noise-Cancelling Headphones" loading="lazy"></a>
+                        <div class="content">
+                            <div class="vendor">Electronics Store</div>
+                            <h3><a href="product.html">Premium Noise-Cancelling Headphones</a></h3>
+                            <p class="desc">Premium quality product curated for you.</p>
+                            <div class="price"><span class="current">৳8,999</span></div>
+                            <div class="rating">
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <span>(21)</span>
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="add-cart" onclick="event.preventDefault();event.stopPropagation();addToCart(100)"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button type="button" class="wishlist" onclick="event.preventDefault();event.stopPropagation();toggleWishlist(100,this)"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-product-url="product.html" role="link" tabindex="0">
+                        <a href="product.html"><img src="images/products/premium/watch.jpg" alt="Classic Analog Watch" loading="lazy"></a>
+                        <div class="content">
+                            <div class="vendor">Fashion Store</div>
+                            <h3><a href="product.html">Classic Analog Watch</a></h3>
+                            <p class="desc">Premium quality product curated for you.</p>
+                            <div class="price"><span class="current">৳4,500</span></div>
+                            <div class="rating">
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <span>(228)</span>
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="add-cart" onclick="event.preventDefault();event.stopPropagation();addToCart(101)"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button type="button" class="wishlist" onclick="event.preventDefault();event.stopPropagation();toggleWishlist(101,this)"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-product-url="product.html" role="link" tabindex="0">
+                        <a href="product.html"><img src="images/products/premium/laptop.jpg" alt="UltraSlim Business Laptop" loading="lazy"></a>
+                        <div class="content">
+                            <div class="vendor">Electronics Store</div>
+                            <h3><a href="product.html">UltraSlim Business Laptop</a></h3>
+                            <p class="desc">Premium quality product curated for you.</p>
+                            <div class="price"><span class="current">৳75,000</span></div>
+                            <div class="rating">
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <span>(281)</span>
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="add-cart" onclick="event.preventDefault();event.stopPropagation();addToCart(102)"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button type="button" class="wishlist" onclick="event.preventDefault();event.stopPropagation();toggleWishlist(102,this)"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-product-url="product.html" role="link" tabindex="0">
+                        <a href="product.html"><img src="images/products/premium/apple_watch.jpg" alt="Smart Watch Series 8" loading="lazy"></a>
+                        <div class="content">
+                            <div class="vendor">Electronics Store</div>
+                            <h3><a href="product.html">Smart Watch Series 8</a></h3>
+                            <p class="desc">Premium quality product curated for you.</p>
+                            <div class="price"><span class="current">৳35,000</span></div>
+                            <div class="rating">
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <span>(487)</span>
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="add-cart" onclick="event.preventDefault();event.stopPropagation();addToCart(103)"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button type="button" class="wishlist" onclick="event.preventDefault();event.stopPropagation();toggleWishlist(103,this)"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-product-url="product.html" role="link" tabindex="0">
+                        <a href="product.html"><img src="images/products/premium/iphone.jpg" alt="Smartphone 13 Pro Max" loading="lazy"></a>
+                        <div class="content">
+                            <div class="vendor">Electronics Store</div>
+                            <h3><a href="product.html">Smartphone 13 Pro Max</a></h3>
+                            <p class="desc">Premium quality product curated for you.</p>
+                            <div class="price"><span class="current">৳95,000</span></div>
+                            <div class="rating">
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <span>(402)</span>
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="add-cart" onclick="event.preventDefault();event.stopPropagation();addToCart(104)"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button type="button" class="wishlist" onclick="event.preventDefault();event.stopPropagation();toggleWishlist(104,this)"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-product-url="product.html" role="link" tabindex="0">
+                        <a href="product.html"><img src="images/products/premium/camera.jpg" alt="DSLR Camera 4K" loading="lazy"></a>
+                        <div class="content">
+                            <div class="vendor">Electronics Store</div>
+                            <h3><a href="product.html">DSLR Camera 4K</a></h3>
+                            <p class="desc">Premium quality product curated for you.</p>
+                            <div class="price"><span class="current">৳45,000</span></div>
+                            <div class="rating">
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <span>(268)</span>
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="add-cart" onclick="event.preventDefault();event.stopPropagation();addToCart(105)"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button type="button" class="wishlist" onclick="event.preventDefault();event.stopPropagation();toggleWishlist(105,this)"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-product-url="product.html" role="link" tabindex="0">
+                        <a href="product.html"><img src="images/products/premium/red_shoes.jpg" alt="Red Running Sneakers" loading="lazy"></a>
+                        <div class="content">
+                            <div class="vendor">Fashion Store</div>
+                            <h3><a href="product.html">Red Running Sneakers</a></h3>
+                            <p class="desc">Premium quality product curated for you.</p>
+                            <div class="price"><span class="current">৳2,500</span></div>
+                            <div class="rating">
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <span>(461)</span>
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="add-cart" onclick="event.preventDefault();event.stopPropagation();addToCart(106)"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button type="button" class="wishlist" onclick="event.preventDefault();event.stopPropagation();toggleWishlist(106,this)"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-product-url="product.html" role="link" tabindex="0">
+                        <a href="product.html"><img src="images/products/premium/white_sneakers.jpg" alt="Classic White Sneakers" loading="lazy"></a>
+                        <div class="content">
+                            <div class="vendor">Fashion Store</div>
+                            <h3><a href="product.html">Classic White Sneakers</a></h3>
+                            <p class="desc">Premium quality product curated for you.</p>
+                            <div class="price"><span class="current">৳1,800</span></div>
+                            <div class="rating">
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <span>(136)</span>
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="add-cart" onclick="event.preventDefault();event.stopPropagation();addToCart(107)"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button type="button" class="wishlist" onclick="event.preventDefault();event.stopPropagation();toggleWishlist(107,this)"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-product-url="product.html" role="link" tabindex="0">
+                        <a href="product.html"><img src="images/products/premium/sofa.jpg" alt="Modern Living Room Sofa" loading="lazy"></a>
+                        <div class="content">
+                            <div class="vendor">Home & Living Store</div>
+                            <h3><a href="product.html">Modern Living Room Sofa</a></h3>
+                            <p class="desc">Premium quality product curated for you.</p>
+                            <div class="price"><span class="current">৳25,000</span></div>
+                            <div class="rating">
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <span>(350)</span>
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="add-cart" onclick="event.preventDefault();event.stopPropagation();addToCart(108)"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button type="button" class="wishlist" onclick="event.preventDefault();event.stopPropagation();toggleWishlist(108,this)"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-product-url="product.html" role="link" tabindex="0">
+                        <a href="product.html"><img src="images/products/premium/perfume.jpg" alt="Luxury Fragrance 100ml" loading="lazy"></a>
+                        <div class="content">
+                            <div class="vendor">Beauty & Health Store</div>
+                            <h3><a href="product.html">Luxury Fragrance 100ml</a></h3>
+                            <p class="desc">Premium quality product curated for you.</p>
+                            <div class="price"><span class="current">৳3,500</span></div>
+                            <div class="rating">
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <span>(105)</span>
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="add-cart" onclick="event.preventDefault();event.stopPropagation();addToCart(109)"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button type="button" class="wishlist" onclick="event.preventDefault();event.stopPropagation();toggleWishlist(109,this)"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-product-url="product.html" role="link" tabindex="0">
+                        <a href="product.html"><img src="images/products/premium/tshirt.jpg" alt="Essential White T-Shirt" loading="lazy"></a>
+                        <div class="content">
+                            <div class="vendor">Fashion Store</div>
+                            <h3><a href="product.html">Essential White T-Shirt</a></h3>
+                            <p class="desc">Premium quality product curated for you.</p>
+                            <div class="price"><span class="current">৳600</span></div>
+                            <div class="rating">
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <span>(86)</span>
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="add-cart" onclick="event.preventDefault();event.stopPropagation();addToCart(110)"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button type="button" class="wishlist" onclick="event.preventDefault();event.stopPropagation();toggleWishlist(110,this)"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-product-url="product.html" role="link" tabindex="0">
+                        <a href="product.html"><img src="images/products/premium/earbuds.jpg" alt="Wireless Earbuds Pro" loading="lazy"></a>
+                        <div class="content">
+                            <div class="vendor">Electronics Store</div>
+                            <h3><a href="product.html">Wireless Earbuds Pro</a></h3>
+                            <p class="desc">Premium quality product curated for you.</p>
+                            <div class="price"><span class="current">৳5,500</span></div>
+                            <div class="rating">
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <span>(355)</span>
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="add-cart" onclick="event.preventDefault();event.stopPropagation();addToCart(111)"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button type="button" class="wishlist" onclick="event.preventDefault();event.stopPropagation();toggleWishlist(111,this)"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-product-url="product.html" role="link" tabindex="0">
+                        <a href="product.html"><img src="images/products/premium/bag.jpg" alt="Designer Leather Handbag" loading="lazy"></a>
+                        <div class="content">
+                            <div class="vendor">Fashion Store</div>
+                            <h3><a href="product.html">Designer Leather Handbag</a></h3>
+                            <p class="desc">Premium quality product curated for you.</p>
+                            <div class="price"><span class="current">৳8,000</span></div>
+                            <div class="rating">
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <span>(33)</span>
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="add-cart" onclick="event.preventDefault();event.stopPropagation();addToCart(112)"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button type="button" class="wishlist" onclick="event.preventDefault();event.stopPropagation();toggleWishlist(112,this)"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-product-url="product.html" role="link" tabindex="0">
+                        <a href="product.html"><img src="images/products/premium/leather_jacket.jpg" alt="Men's Leather Jacket" loading="lazy"></a>
+                        <div class="content">
+                            <div class="vendor">Fashion Store</div>
+                            <h3><a href="product.html">Men's Leather Jacket</a></h3>
+                            <p class="desc">Premium quality product curated for you.</p>
+                            <div class="price"><span class="current">৳4,500</span></div>
+                            <div class="rating">
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <span>(53)</span>
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="add-cart" onclick="event.preventDefault();event.stopPropagation();addToCart(113)"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button type="button" class="wishlist" onclick="event.preventDefault();event.stopPropagation();toggleWishlist(113,this)"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-product-url="product.html" role="link" tabindex="0">
+                        <a href="product.html"><img src="images/products/premium/kitchen.jpg" alt="Minimalist Kitchen Set" loading="lazy"></a>
+                        <div class="content">
+                            <div class="vendor">Home & Living Store</div>
+                            <h3><a href="product.html">Minimalist Kitchen Set</a></h3>
+                            <p class="desc">Premium quality product curated for you.</p>
+                            <div class="price"><span class="current">৳15,000</span></div>
+                            <div class="rating">
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <span>(379)</span>
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="add-cart" onclick="event.preventDefault();event.stopPropagation();addToCart(114)"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button type="button" class="wishlist" onclick="event.preventDefault();event.stopPropagation();toggleWishlist(114,this)"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-product-url="product.html" role="link" tabindex="0">
+                        <a href="product.html"><img src="images/products/premium/decor.jpg" alt="Aesthetic Room Decor" loading="lazy"></a>
+                        <div class="content">
+                            <div class="vendor">Home & Living Store</div>
+                            <h3><a href="product.html">Aesthetic Room Decor</a></h3>
+                            <p class="desc">Premium quality product curated for you.</p>
+                            <div class="price"><span class="current">৳1,200</span></div>
+                            <div class="rating">
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <span>(136)</span>
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="add-cart" onclick="event.preventDefault();event.stopPropagation();addToCart(115)"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button type="button" class="wishlist" onclick="event.preventDefault();event.stopPropagation();toggleWishlist(115,this)"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-product-url="product.html" role="link" tabindex="0">
+                        <a href="product.html"><img src="images/products/premium/skincare.jpg" alt="Organic Skincare Routine" loading="lazy"></a>
+                        <div class="content">
+                            <div class="vendor">Beauty & Health Store</div>
+                            <h3><a href="product.html">Organic Skincare Routine</a></h3>
+                            <p class="desc">Premium quality product curated for you.</p>
+                            <div class="price"><span class="current">৳2,200</span></div>
+                            <div class="rating">
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <span>(308)</span>
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="add-cart" onclick="event.preventDefault();event.stopPropagation();addToCart(118)"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button type="button" class="wishlist" onclick="event.preventDefault();event.stopPropagation();toggleWishlist(118,this)"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-product-url="product.html" role="link" tabindex="0">
+                        <a href="product.html"><img src="images/products/premium/watch2.jpg" alt="Minimalist Wrist Watch" loading="lazy"></a>
+                        <div class="content">
+                            <div class="vendor">Fashion Store</div>
+                            <h3><a href="product.html">Minimalist Wrist Watch</a></h3>
+                            <p class="desc">Premium quality product curated for you.</p>
+                            <div class="price"><span class="current">৳3,000</span></div>
+                            <div class="rating">
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <i class="fas fa-star" style="color:#facc15;"></i>
+                                <span>(335)</span>
+                            </div>
+                            <div class="actions">
+                                <button type="button" class="add-cart" onclick="event.preventDefault();event.stopPropagation();addToCart(119)"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button type="button" class="wishlist" onclick="event.preventDefault();event.stopPropagation();toggleWishlist(119,this)"><i class="fas fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card"><a href="product.html"><img src="images/products/electronics/samsung-s24.jpg" alt="Samsung Galaxy S24"></a><div class="content"><div class="vendor">TechStore BD</div><h3><a href="product.html">Samsung Galaxy S24 Ultra 5G</a></h3><div class="price"><span class="current">৳89,999</span><span class="old">৳1,19,999</span></div><div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span>(42)</span></div><div class="actions"><button type="button" class="add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button><button type="button" class="wishlist"><i class="fas fa-heart"></i></button></div></div></div>
+                    <div class="product-card"><a href="product.html"><img src="images/products/fashion/cotton-tshirt.jpg" alt="Cotton T-Shirt"></a><div class="content"><div class="vendor">Fashion Hub</div><h3><a href="product.html">Premium Cotton T-Shirt</a></h3><div class="price"><span class="current">৳799</span></div><div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><span>(28)</span></div><div class="actions"><button type="button" class="add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button><button type="button" class="wishlist"><i class="fas fa-heart"></i></button></div></div></div>
+                    <div class="product-card"><div class="badge">-30%</div><a href="product.html"><img src="images/products/kitchen/rice-cooker.jpg" alt="Rice Cooker"></a><div class="content"><div class="vendor">Home Appliances</div><h3><a href="product.html">Smart Rice Cooker 1.8L</a></h3><div class="price"><span class="current">৳3,399</span><span class="old">৳4,999</span></div><div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>(67)</span></div><div class="actions"><button type="button" class="add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button><button type="button" class="wishlist"><i class="fas fa-heart"></i></button></div></div></div>
+                    <div class="product-card"><a href="product.html"><img src="images/products/groceries/atomic-habits.jpg" alt="Atomic Habits"></a><div class="content"><div class="vendor">Book Corner</div><h3><a href="product.html">Atomic Habits by James Clear</a></h3><div class="price"><span class="current">৳450</span></div><div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span>(15)</span></div><div class="actions"><button type="button" class="add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button><button type="button" class="wishlist"><i class="fas fa-heart"></i></button></div></div></div>
+                    <div class="product-card"><div class="badge">-25%</div><a href="product.html"><img src="images/products/electronics/macbook-pro.jpg" alt="MacBook Pro"></a><div class="content"><div class="vendor">TechStore BD</div><h3><a href="product.html">Apple MacBook Pro M3</a></h3><div class="price"><span class="current">৳1,89,999</span><span class="old">৳2,49,999</span></div><div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>(120)</span></div><div class="actions"><button type="button" class="add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button><button type="button" class="wishlist"><i class="fas fa-heart"></i></button></div></div></div>
+                    <div class="product-card"><a href="product.html"><img src="images/products/fashion/denim-jeans.jpg" alt="Denim Jeans"></a><div class="content"><div class="vendor">Fashion Hub</div><h3><a href="product.html">Premium Denim Jeans</a></h3><div class="price"><span class="current">৳1,399</span></div><div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><span>(34)</span></div><div class="actions"><button type="button" class="add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button><button type="button" class="wishlist"><i class="fas fa-heart"></i></button></div></div></div>
+                    <div class="product-card"><a href="product.html"><img src="images/products/fitness/yoga-mat.jpg" alt="Yoga Mat"></a><div class="content"><div class="vendor">FitnessPro</div><h3><a href="product.html">Premium Yoga Mat Non-Slip</a></h3><div class="price"><span class="current">৳1,599</span></div><div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span>(245)</span></div><div class="actions"><button type="button" class="add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button><button type="button" class="wishlist"><i class="fas fa-heart"></i></button></div></div></div>
+                    <div class="product-card"><a href="product.html"><img src="images/products/skincare/vitamin-c-serum.jpg" alt="Vitamin C Serum"></a><div class="content"><div class="vendor">Beauty Plus</div><h3><a href="product.html">Vitamin C Brightening Serum</a></h3><div class="price"><span class="current">৳1,299</span></div><div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><span>(56)</span></div><div class="actions"><button type="button" class="add-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button><button type="button" class="wishlist"><i class="fas fa-heart"></i></button></div></div></div>
+                </div>
+                <div style="margin-top: 40px; display: flex; justify-content: center;"><div class="pagination"><div class="page-item active"><span class="page-link">1</span></div><div class="page-item"><a class="page-link" href="#">2</a></div><div class="page-item"><a class="page-link" href="#">3</a></div><div class="page-item"><a class="page-link" href="#">Next</a></div></div></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div><a href="index.html" class="logo" style="font-size: 32px;">Nova<span style="color: var(--secondary);">Mart</span></a><p style="color: #9ca3af; margin-top: 16px; line-height: 1.8;">Bangladesh's leading multi-vendor e-commerce platform. Shop with confidence and enjoy the best deals on thousands of products.</p><div class="social-links"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div></div>
+                <div><h4>Quick Links</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="#">Terms & Conditions</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Return Policy</a></li></ul></div>
+                <div><h4>My Account</h4><ul><li><a href="login.html">Login</a></li><li><a href="register.html">Register</a></li><li><a href="products.html">Browse Products</a></li><li><a href="cart.html">Shopping Cart</a></li></ul></div>
+                <div><h4>Contact Info</h4><ul><li><i class="fas fa-map-marker-alt"></i> Gulshan, Dhaka, Bangladesh</li><li><i class="fas fa-phone"></i> +8801701885707</li><li><i class="fas fa-envelope"></i> info@novamart.com</li><li><i class="fas fa-clock"></i> Sat-Thu: 9:00 AM - 9:00 PM</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2025 NovaMart. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+
+    <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <script>
+        window.storefrontConfig = { currency: { code: 'BDT', symbol: '৳', symbol_position: 'prefix', decimals: 0, rate: 1 }, endpoints: { cartCount: '#', cartAdd: '#', wishlistToggle: '#' } };
+        function convertStoreMoney(a) { return Number(a); }
+        function formatStoreMoney(a) { return '৳' + Number(a).toLocaleString(); }
+        function notifyUser(m, t) { var c = document.getElementById('toast-container'); if (!c) return; var toast = document.createElement('div'); toast.className = 'toast-notice toast-' + (t || 'success'); toast.innerHTML = '<span>' + m + '</span><button type="button" class="toast-close" onclick="this.parentElement.remove()">x</button>'; c.appendChild(toast); setTimeout(function() { toast.remove(); }, 3500); }
+        function updateCartCount() { var c = document.getElementById('cart-count'); if (c) { c.textContent = parseInt(c.textContent || 0) + 1; } }
+        function addToCart(id) { notifyUser('Product added to cart!', 'success'); updateCartCount(); }
+        function toggleWishlist(id, btn) { if (btn) btn.style.color = btn.style.color === 'rgb(239, 68, 68)' ? '' : '#ef4444'; notifyUser('Wishlist updated.', 'success'); }
+        // Hero slider
+        (function() { var s = document.querySelector('[data-hero-slider]'); if (!s) return; var slides = Array.from(s.querySelectorAll('[data-hero-slide]')); if (slides.length <= 1) return; var dots = Array.from(document.querySelectorAll('[data-hero-dot]')); var prev = document.querySelector('[data-hero-prev]'); var next = document.querySelector('[data-hero-next]'); var idx = 0, timer; function go(i) { idx = (i + slides.length) % slides.length; slides.forEach(function(sl, j) { sl.classList.toggle('is-active', j === idx); }); dots.forEach(function(d, j) { d.classList.toggle('is-active', j === idx); }); } function start() { clearInterval(timer); timer = setInterval(function() { go(idx + 1); }, 6000); } dots.forEach(function(d) { d.addEventListener('click', function() { go(Number(d.getAttribute('data-hero-dot'))); start(); }); }); if (prev) prev.addEventListener('click', function() { go(idx - 1); start(); }); if (next) next.addEventListener('click', function() { go(idx + 1); start(); }); var hero = document.getElementById('hero-banner-pick'); if (hero) { hero.addEventListener('mouseenter', function() { clearInterval(timer); }); hero.addEventListener('mouseleave', start); } start(); })();
+        // Product card navigation
+        document.addEventListener('click', function(e) { var c = e.target.closest('.product-card[data-product-url]'); if (!c) return; if (e.target.closest('a, button, input, select, textarea, label')) return; var d = c.dataset.productUrl; if (d) window.location.href = d; });
+        // Newsletter
+        (function() { var f = document.getElementById('home-newsletter-form'); if (!f) return; f.addEventListener('submit', function(e) { e.preventDefault(); var em = document.getElementById('home-newsletter-email'); if (em && em.value) { notifyUser('Thanks! You are subscribed to product deal alerts.', 'success'); em.value = ''; } }); })();
+        // Flash timer
+        (function() { var t = document.getElementById('flash-timer'); if (!t) return; var p = t.textContent.split(':'); var sec = parseInt(p[0]) * 3600 + parseInt(p[1]) * 60 + parseInt(p[2]); setInterval(function() { if (sec <= 0) return; sec--; var h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), s = sec % 60; t.textContent = String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0'); }, 1000); })();
+    </script>
+</body>
+</html>

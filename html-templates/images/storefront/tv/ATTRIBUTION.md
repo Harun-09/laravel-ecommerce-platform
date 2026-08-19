@@ -1,0 +1,54 @@
+﻿# Storefront Image Sources
+
+Source: Openverse API filtered by `license=cc0` and `source=stocksnap`.
+
+- `images/storefront/tv/hub/top-deals.jpg`
+  - Creator: Pawel Kadysz
+  - Title: Tv Television
+  - Source: https://stocksnap.io/photo/tv-television-UNR73B9XH9
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/tv/hub/all-tvs.jpg`
+  - Creator: Pablo%20GarciaSalda%F1a
+  - Title: Tv Television
+  - Source: https://stocksnap.io/photo/tv-television-32PHX17FRE
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/tv/hub/oled-tvs.jpg`
+  - Creator: Sven Scheuermeier
+  - Title: Tv Television
+  - Source: https://stocksnap.io/photo/tv-television-E5XKV8B7TJ
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/tv/hub/qled-tvs.jpg`
+  - Creator: Pablo Garcia SaldaÃ±a
+  - Title: Tv Television
+  - Source: https://stocksnap.io/photo/tv-television-875XI7UPW9
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/tv/hub/4k-tvs.jpg`
+  - Creator: Markus Spiske
+  - Title: Hotelroom Bed
+  - Source: https://stocksnap.io/photo/hotelroom-bed-C26E1DKA02
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/tv/hub/gaming-tvs.jpg`
+  - Creator: Benjamin Child
+  - Title: Table Chairs
+  - Source: https://stocksnap.io/photo/table-chairs-7OPWOSQFXS
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/tv/hub/large-screen.jpg`
+  - Creator: Startup Stock Photos
+  - Title: Desk Office
+  - Source: https://stocksnap.io/photo/desk-office-SPXGYT0LOF
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/tv/hub/soundbars.jpg`
+  - Creator: JESHOOTS.com
+  - Title: Gamer Football
+  - Source: https://stocksnap.io/photo/gamer-football-CQHIFVY4HE
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/tv/promo/main.jpg`
+  - Creator: Jaros%u0142aw%20Ceborski
+  - Title: Interior Living
+  - Source: https://stocksnap.io/photo/interior-living-6SMA09U7Y8
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+- `images/storefront/tv/promo/side.jpg`
+  - Creator: Breather
+  - Title: Interior Design
+  - Source: https://stocksnap.io/photo/interior-design-70ZAX0HRQQ
+  - License: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
