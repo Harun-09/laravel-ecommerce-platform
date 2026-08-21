@@ -68,7 +68,7 @@
     width: 100%;
     height: 100%;
     max-width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     -webkit-user-drag: none;
     user-select: none;
@@ -236,7 +236,7 @@
 
 @media (max-width: 1024px) {
     .hero-banner-pick__slider {
-        min-height: 320px;
+        min-height: 250px;
     }
 
     .hero-banner-pick__nav--prev {
@@ -250,7 +250,7 @@
 
 @media (max-width: 768px) {
     .hero-banner-pick__slider {
-        min-height: 220px;
+        min-height: 140px;
     }
 
     .hero-banner-pick__content {
