@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\ShippingZone;
-use App\Models\ShippingMethod;
+use App\Domains\ECommerce\Models\ShippingZone;
+use App\Domains\ECommerce\Models\ShippingMethod;
 use Illuminate\Database\Seeder;
 
 class ShippingSeeder extends Seeder

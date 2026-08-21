@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use App\Models\Order;
+use App\Domains\ECommerce\Models\Order;
 use App\Services\StripeGatewayService;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Str;
@@ -108,8 +108,8 @@ class PaymentWebhookTest extends TestCase
      *     checkoutToken:string,
      *     orderA:Order,
      *     orderB:Order,
-     *     paymentA:\App\Models\Payment,
-     *     paymentB:\App\Models\Payment
+     *     paymentA:\App\Domains\ECommerce\Models\Payment,
+     *     paymentB:\App\Domains\ECommerce\Models\Payment
      * }
      */
     private function createSplitStripeCheckout($customer, array $amounts): array

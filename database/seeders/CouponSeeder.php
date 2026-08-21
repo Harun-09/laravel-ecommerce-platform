@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\Coupon;
-use App\Models\Vendor;
+use App\Domains\ECommerce\Models\Coupon;
+use App\Domains\ECommerce\Models\Vendor;
 use Illuminate\Database\Seeder;
 
 class CouponSeeder extends Seeder

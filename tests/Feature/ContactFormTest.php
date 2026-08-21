@@ -4,7 +4,7 @@ namespace Tests\Feature;
 
 use App\Mail\ContactMessageAcknowledgementMail;
 use App\Mail\ContactMessageSubmittedMail;
-use App\Models\ContactMessage;
+use App\Domains\ECommerce\Models\ContactMessage;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Mail;
 use Tests\Feature\Concerns\BuildsEcommerceData;

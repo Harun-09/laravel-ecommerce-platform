@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-use App\Models\Vendor;
+use App\Domains\ECommerce\Models\Vendor;
 use Illuminate\Database\Seeder;
 
 class VendorSeeder extends Seeder

@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use App\Models\ReturnRequest;
+use App\Domains\ECommerce\Models\ReturnRequest;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\PermissionRegistrar;

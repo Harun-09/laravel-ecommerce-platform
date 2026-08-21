@@ -2,7 +2,7 @@
 
 namespace App\Mail;
 
-use App\Models\ContactMessage;
+use App\Domains\ECommerce\Models\ContactMessage;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;

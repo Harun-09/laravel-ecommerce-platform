@@ -2,8 +2,8 @@
 
 namespace Tests\Feature;
 
-use App\Models\Order;
-use App\Models\ReturnRequest;
+use App\Domains\ECommerce\Models\Order;
+use App\Domains\ECommerce\Models\ReturnRequest;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Notification;
 use Tests\Feature\Concerns\BuildsEcommerceData;

@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Brand;
-use App\Models\Category;
-use App\Models\Product;
-use App\Models\ProductImage;
-use App\Models\Vendor;
+use App\Domains\ECommerce\Models\Brand;
+use App\Domains\ECommerce\Models\Category;
+use App\Domains\ECommerce\Models\Product;
+use App\Domains\ECommerce\Models\ProductImage;
+use App\Domains\ECommerce\Models\Vendor;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;

@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Banner;
+use App\Domains\ECommerce\Models\Banner;
 use Illuminate\Database\Seeder;
 
 class BannerSeeder extends Seeder

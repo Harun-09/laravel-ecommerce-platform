@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use App\Models\VendorPayout;
+use App\Domains\ECommerce\Models\VendorPayout;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\PermissionRegistrar;

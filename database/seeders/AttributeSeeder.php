@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\Attribute;
-use App\Models\AttributeValue;
+use App\Domains\ECommerce\Models\Attribute;
+use App\Domains\ECommerce\Models\AttributeValue;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
 

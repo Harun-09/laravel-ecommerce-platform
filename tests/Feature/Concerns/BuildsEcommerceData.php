@@ -2,17 +2,17 @@
 
 namespace Tests\Feature\Concerns;
 
-use App\Models\Cart;
-use App\Models\Category;
-use App\Models\Order;
-use App\Models\OrderItem;
-use App\Models\Payment;
-use App\Models\Product;
-use App\Models\Review;
-use App\Models\ShippingMethod;
-use App\Models\ShippingZone;
+use App\Domains\ECommerce\Models\Cart;
+use App\Domains\ECommerce\Models\Category;
+use App\Domains\ECommerce\Models\Order;
+use App\Domains\ECommerce\Models\OrderItem;
+use App\Domains\ECommerce\Models\Payment;
+use App\Domains\ECommerce\Models\Product;
+use App\Domains\ECommerce\Models\Review;
+use App\Domains\ECommerce\Models\ShippingMethod;
+use App\Domains\ECommerce\Models\ShippingZone;
 use App\Models\User;
-use App\Models\Vendor;
+use App\Domains\ECommerce\Models\Vendor;
 use Database\Seeders\RolePermissionSeeder;
 use Illuminate\Support\Str;
 use Spatie\Permission\PermissionRegistrar;

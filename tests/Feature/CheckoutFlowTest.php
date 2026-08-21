@@ -2,8 +2,8 @@
 
 namespace Tests\Feature;
 
-use App\Models\Cart;
-use App\Models\Order;
+use App\Domains\ECommerce\Models\Cart;
+use App\Domains\ECommerce\Models\Order;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Notification;
 use Spatie\Permission\Models\Role;

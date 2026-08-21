@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use App\Models\Order;
+use App\Domains\ECommerce\Models\Order;
 use App\Services\StripeGatewayService;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Collection;
@@ -229,7 +229,7 @@ class StripePaymentFlowTest extends TestCase
 
     /**
      * @param  array{0:int|float,1:int|float}  $amounts
-     * @return array{checkoutToken:string,orderA:Order,orderB:Order,paymentA:\App\Models\Payment,paymentB:\App\Models\Payment}
+     * @return array{checkoutToken:string,orderA:Order,orderB:Order,paymentA:\App\Domains\ECommerce\Models\Payment,paymentB:\App\Domains\ECommerce\Models\Payment}
      */
     private function createSplitStripeCheckout($customer, array $amounts = [110, 220]): array
     {

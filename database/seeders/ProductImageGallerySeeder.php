@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\Product;
-use App\Models\ProductImage;
+use App\Domains\ECommerce\Models\Product;
+use App\Domains\ECommerce\Models\ProductImage;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;

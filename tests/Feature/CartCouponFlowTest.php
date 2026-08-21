@@ -2,8 +2,8 @@
 
 namespace Tests\Feature;
 
-use App\Models\Cart;
-use App\Models\Coupon;
+use App\Domains\ECommerce\Models\Cart;
+use App\Domains\ECommerce\Models\Coupon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Str;
 use Tests\Feature\Concerns\BuildsEcommerceData;

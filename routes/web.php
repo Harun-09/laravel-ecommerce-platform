@@ -304,14 +304,14 @@ Route::middleware(['auth', \App\Http\Middleware\VendorMiddleware::class, 'can:vi
             $vendor = $user->vendor;
 
             $stats = [
-                'total_products' => \App\Models\Product::query()->forCurrentVendor($user)->count(),
-                'active_products' => \App\Models\Product::query()->forCurrentVendor($user)->active()->count(),
-                'total_orders' => \App\Models\Order::query()->forCurrentVendor($user)->count(),
-                'pending_orders' => \App\Models\Order::query()->forCurrentVendor($user)->pending()->count(),
-                'total_sales' => \App\Models\Order::query()->forCurrentVendor($user)->paid()->sum('total'),
+                'total_products' => \App\Domains\ECommerce\Models\Product::query()->forCurrentVendor($user)->count(),
+                'active_products' => \App\Domains\ECommerce\Models\Product::query()->forCurrentVendor($user)->active()->count(),
+                'total_orders' => \App\Domains\ECommerce\Models\Order::query()->forCurrentVendor($user)->count(),
+                'pending_orders' => \App\Domains\ECommerce\Models\Order::query()->forCurrentVendor($user)->pending()->count(),
+                'total_sales' => \App\Domains\ECommerce\Models\Order::query()->forCurrentVendor($user)->paid()->sum('total'),
                 'pending_payout' => $vendor->getPendingBalance(),
             ];
-            $recentOrders = \App\Models\Order::query()
+            $recentOrders = \App\Domains\ECommerce\Models\Order::query()
                 ->forCurrentVendor($user)
                 ->with('user')
                 ->latest()
