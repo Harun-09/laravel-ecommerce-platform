@@ -142,12 +142,12 @@
                                     </a>
                                 </td>
                                 <td>
-                                    @if($order->user)
-                                        <a href="{{ route('admin.users.show', $order->user) }}"
+                                    @if($order->buyer)
+                                        <a href="{{ route('admin.users.show', $order->buyer) }}"
                                            style="color: var(--primary); font-weight: 500; text-decoration: none;"
                                            onmouseover="this.style.textDecoration='underline'"
                                            onmouseout="this.style.textDecoration='none'">
-                                            {{ $order->user->name }}
+                                            {{ $order->buyer->name }}
                                         </a>
                                     @else
                                         <span style="color: #94a3b8;">Guest</span>

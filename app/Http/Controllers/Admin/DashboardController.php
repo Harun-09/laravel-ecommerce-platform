@@ -37,7 +37,7 @@ class DashboardController extends Controller
         ];
 
         // Recent orders
-        $recentOrders = Order::with(['user', 'supplierOrders.supplier'])
+        $recentOrders = Order::with(['buyer', 'supplierOrders.supplier'])
             ->latest()
             ->take(10)
             ->get();
