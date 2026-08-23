@@ -22,7 +22,7 @@ export default function AdminDashboard() {
                 <a href="admin-dashboard.html" className="nav-link active"><i className="fas fa-home"></i><span>Dashboard</span></a>
             </div>
             <div className="nav-section">
-                <div className="nav-section-title">E-Commerce</div>
+                <div className="nav-section-title">NovaMart</div>
                 <a href="#" className="nav-link"><i className="fas fa-shopping-bag"></i><span>Orders</span><span className="badge">12</span></a>
                 <a href="#" className="nav-link"><i className="fas fa-undo-alt"></i><span>Returns</span><span className="badge">3</span></a>
                 <a href="#" className="nav-link"><i className="fas fa-wallet"></i><span>Payouts</span><span className="badge">5</span></a>

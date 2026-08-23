@@ -337,7 +337,7 @@ export default function BulkPricingIndex({ auth, summary, products, selectedProd
             user={auth.user}
             header={
                 <PageHeader
-                    eyebrow="E-Commerce backend"
+                    eyebrow="NovaMart backend"
                     title="Bulk Pricing &amp; MOQ"
                     description="Manage minimum order quantity and tiered unit pricing from a dedicated backend workspace."
                     actions={(

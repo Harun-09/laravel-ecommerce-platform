@@ -249,7 +249,7 @@
                 <div>
                     <a href="{{ route('home') }}" class="logo" style="font-size: 32px;">Nova<span
                             style="color: var(--secondary);">Mart</span></a>
-                    <p style="color: #9ca3af; margin-top: 16px; line-height: 1.8;">{{ __('Bangladesh\'s leading multi-vendor e-commerce platform. Shop with confidence and enjoy the best deals on thousands of products.') }}</p>
+                    <p style="color: #9ca3af; margin-top: 16px; line-height: 1.8;">{{ __('Bangladesh\'s leading multi-vendor NovaMart platform. Shop with confidence and enjoy the best deals on thousands of products.') }}</p>
                     @php
                         $socialLinks = [
                             [

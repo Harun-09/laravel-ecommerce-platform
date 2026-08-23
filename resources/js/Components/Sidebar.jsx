@@ -35,7 +35,7 @@ import { useState } from 'react';
 const SIDEBAR_MODULES = [
     {
         key: 'ecommerce',
-        label: 'E-Commerce',
+        label: 'NovaMart',
         roles: ['buyer', 'supplier', 'admin'],
         icon: StorefrontIcon,
         items: [
@@ -204,7 +204,7 @@ export default function Sidebar({ user, currentPath, onNavigate = null }) {
                     <span className="leading-tight">
                         <span className="block text-sm font-black text-white">NovaMart</span>
                         <span className="block text-[11px] font-semibold uppercase text-slate-400">
-                            e-commerce hub
+                            NovaMart hub
                         </span>
                     </span>
                 </Link>

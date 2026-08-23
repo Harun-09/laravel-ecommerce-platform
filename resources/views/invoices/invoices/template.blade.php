@@ -292,7 +292,7 @@
                     <td class="brand">
                         <div class="header-card">
                             <h1>NovaMart Automate</h1>
-                            <p>B2B E-Commerce & Business Automation Platform</p>
+                            <p>B2B NovaMart & Business Automation Platform</p>
                             <p>Email: support@NovaMart.com</p>
                         </div>
                     </td>

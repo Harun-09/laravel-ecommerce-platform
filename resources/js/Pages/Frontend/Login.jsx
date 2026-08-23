@@ -15,7 +15,7 @@ export default function Login() {
         <div className="auth-left">
             <div className="auth-left-content">
                 <h1>Nova<span>Mart</span></h1>
-                <p>Bangladesh's leading multi-vendor e-commerce platform. Shop from thousands of verified sellers.</p>
+                <p>Bangladesh's leading multi-vendor NovaMart platform. Shop from thousands of verified sellers.</p>
                 <div className="features">
                     <div className="feature">
                         <i className="fas fa-shield-alt"></i>

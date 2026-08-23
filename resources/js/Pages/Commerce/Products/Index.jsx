@@ -2,7 +2,7 @@ import ModuleWorkspacePage from '@/Components/ModuleWorkspacePage';
 import { canAccess } from '@/Utils/access';
 
 const buildModuleConfig = (auth) => ({
-    eyebrow: 'E-Commerce',
+    eyebrow: 'NovaMart',
     tag: 'Inventory',
     theme: 'slate',
     compactHeader: true,

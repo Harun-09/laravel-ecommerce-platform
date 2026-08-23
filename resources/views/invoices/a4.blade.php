@@ -63,7 +63,7 @@
     <div class="header">
         <div>
             <h2>NovaMart</h2>
-            <p class="muted">E-Commerce Marketplace</p>
+            <p class="muted">NovaMart Marketplace</p>
             <p class="muted">Dhaka, Bangladesh</p>
         </div>
         <div class="right">

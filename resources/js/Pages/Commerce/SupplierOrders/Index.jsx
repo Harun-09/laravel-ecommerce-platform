@@ -1,7 +1,7 @@
 import ModuleWorkspacePage from '@/Components/ModuleWorkspacePage';
 
 const moduleConfig = {
-    eyebrow: 'E-Commerce',
+    eyebrow: 'NovaMart',
     tag: 'Fulfillment',
     theme: 'workflow',
     heroTitle: 'Supplier order fulfillment',

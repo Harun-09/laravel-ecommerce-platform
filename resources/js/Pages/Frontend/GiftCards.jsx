@@ -44,7 +44,7 @@ export default function GiftCards() {
         <div className="about-layout">
             <div className="about-content card">
                 <h2>Our Story</h2>
-                <p>NovaMart was founded with a simple mission: to create a trusted, accessible, and enjoyable online shopping experience for everyone in Bangladesh. We believe that e-commerce should be simple, secure, and accessible to all.</p>
+                <p>NovaMart was founded with a simple mission: to create a trusted, accessible, and enjoyable online shopping experience for everyone in Bangladesh. We believe that NovaMart should be simple, secure, and accessible to all.</p>
                 <p>Starting as a small team of passionate entrepreneurs, we've grown into one of Bangladesh's leading multi-vendor platforms, connecting thousands of sellers with millions of customers across the country.</p>
                 <h3>Our Mission</h3>
                 <p>To empower businesses of all sizes by providing them with the tools, technology, and platform they need to reach customers across Bangladesh and beyond.</p>
@@ -78,7 +78,7 @@ export default function GiftCards() {
     <footer className="footer">
         <div className="container">
             <div className="footer-grid">
-                <div><a href="index.html" className="logo ex-style-8">Nova<span className="ex-style-9">Mart</span></a><p className="ex-style-10">Bangladesh's leading multi-vendor e-commerce platform. Shop with confidence and enjoy the best deals on thousands of products.</p><div className="social-links"><a href="#"><i className="fab fa-facebook-f"></i></a><a href="#"><i className="fab fa-instagram"></i></a><a href="#"><i className="fab fa-youtube"></i></a><a href="#"><i className="fab fa-twitter"></i></a></div></div>
+                <div><a href="index.html" className="logo ex-style-8">Nova<span className="ex-style-9">Mart</span></a><p className="ex-style-10">Bangladesh's leading multi-vendor NovaMart platform. Shop with confidence and enjoy the best deals on thousands of products.</p><div className="social-links"><a href="#"><i className="fab fa-facebook-f"></i></a><a href="#"><i className="fab fa-instagram"></i></a><a href="#"><i className="fab fa-youtube"></i></a><a href="#"><i className="fab fa-twitter"></i></a></div></div>
                 <div><h4>Quick Links</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="#">Terms & Conditions</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Return Policy</a></li></ul></div>
                 <div><h4>My Account</h4><ul><li><a href="login.html">Login</a></li><li><a href="register.html">Register</a></li><li><a href="products.html">Browse Products</a></li><li><a href="cart.html">Shopping Cart</a></li></ul></div>
                 <div><h4>Contact Info</h4><ul><li><i className="fas fa-map-marker-alt"></i> Gulshan, Dhaka, Bangladesh</li><li><i className="fas fa-phone"></i> +8801701885707</li><li><i className="fas fa-envelope"></i> info@novamart.com</li><li><i className="fas fa-clock"></i> Sat-Thu: 9:00 AM - 9:00 PM</li></ul></div>

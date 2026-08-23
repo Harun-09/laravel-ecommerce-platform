@@ -55,7 +55,7 @@
             </div>
 
             <div class="nav-section">
-                <div class="nav-section-title">E-Commerce</div>
+                <div class="nav-section-title">NovaMart</div>
 
                 @if($isVendorOnly)
                     @can('view orders')

@@ -16,7 +16,7 @@
         <div class="auth-left">
             <div class="auth-left-content">
                 <h1>Nova<span>Mart</span></h1>
-                <p>Bangladesh's leading multi-vendor e-commerce platform. Shop from thousands of verified sellers.</p>
+                <p>Bangladesh's leading multi-vendor NovaMart platform. Shop from thousands of verified sellers.</p>
 
                 <div class="features">
                     <div class="feature">
