@@ -63,18 +63,18 @@
                                 <div style="display: flex; align-items: center; gap: 12px;">
                                     <div
                                         style="width: 48px; height: 48px; background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 18px;">
-                                        {{ substr($vendor->shop_name, 0, 1) }}
+                                        {{ substr($vendor->company_name, 0, 1) }}
                                     </div>
                                     <div>
-                                        <p style="font-weight: 600;">{{ $vendor->shop_name }}</p>
-                                        <p style="font-size: 13px; color: #64748b;">{{ $vendor->email }}</p>
+                                        <p style="font-weight: 600;">{{ $vendor->company_name }}</p>
+                                        <p style="font-size: 13px; color: #64748b;">{{ $vendor->user->email }}</p>
                                     </div>
                                 </div>
                             </td>
                             <td>{{ $vendor->user->name ?? 'N/A' }}</td>
                             <td>{{ $vendor->products()->count() }}</td>
-                            <td>{{ $vendor->commission_rate }}%</td>
-                            <td style="font-weight: 600;">৳{{ number_format($vendor->orders()->paid()->sum('total')) }}</td>
+                            <td>{{ $'-' }}%</td>
+                            <td style="font-weight: 600;">৳{{ number_format($vendor->supplierOrders()->where('status', 'completed')->sum('grand_total')) }}</td>
                             <td>
                                 @php
                                     $statusClass = match ($vendor->status) {

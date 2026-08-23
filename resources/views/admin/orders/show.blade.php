@@ -77,15 +77,15 @@
                             <td colspan="3" style="text-align: right;">Subtotal</td>
                             <td style="text-align: right;">BDT {{ number_format($order->subtotal) }}</td>
                         </tr>
-                        @if($order->discount_amount > 0)
+                        @if($order->discount_total > 0)
                             <tr>
                                 <td colspan="3" style="text-align: right; color: #16a34a;">Discount</td>
-                                <td style="text-align: right; color: #16a34a;">-BDT {{ number_format($order->discount_amount) }}</td>
+                                <td style="text-align: right; color: #16a34a;">-BDT {{ number_format($order->discount_total) }}</td>
                             </tr>
                         @endif
                         <tr>
                             <td colspan="3" style="text-align: right;">Shipping</td>
-                            <td style="text-align: right;">BDT {{ number_format($order->shipping_cost) }}</td>
+                            <td style="text-align: right;">BDT {{ number_format($order->shipping_total) }}</td>
                         </tr>
                         @if($order->cod_fee > 0)
                             <tr>
@@ -101,11 +101,11 @@
                         @endif
                         <tr>
                             <td colspan="3" style="text-align: right; font-weight: 600; font-size: 16px;">Total</td>
-                            <td style="text-align: right; font-weight: 700; font-size: 18px; color: var(--primary);">BDT {{ number_format($order->total) }}</td>
+                            <td style="text-align: right; font-weight: 700; font-size: 18px; color: var(--primary);">BDT {{ number_format($order->grand_total) }}</td>
                         </tr>
                         <tr>
                             <td colspan="3" style="text-align: right; font-weight: 600;">Vendor Payable</td>
-                            <td style="text-align: right; font-weight: 700; color: #15803d;">BDT {{ number_format($order->payout_payable_amount, 2) }}</td>
+                            <td style="text-align: right; font-weight: 700; color: #15803d;">BDT {{ number_format($(($order->grand_total ?? 0) - ($order->commission_amount ?? 0)), 2) }}</td>
                         </tr>
                     </tfoot>
                 </table>
@@ -126,7 +126,7 @@
                         <div class="form-group" style="margin: 0;">
                             <label>Order Status</label>
                             <select name="status" class="form-control">
-                                <option value="{{ $order->status }}">{{ $order->status_label }} (Current)</option>
+                                <option value="{{ $order->status }}">{{ $ucfirst(is_object($order->status) ? $order->status->value : $order->status) }} (Current)</option>
                                 @foreach($allowedNextStatuses as $statusOption)
                                     <option value="{{ $statusOption }}">{{ \App\Models\Order::statusLabel($statusOption) }}</option>
                                 @endforeach
@@ -188,7 +188,7 @@
                                 name="refund_amount"
                                 class="form-control"
                                 min="0"
-                                max="{{ $order->total }}"
+                                max="{{ $order->grand_total }}"
                                 step="0.01"
                                 value="{{ $order->refunded_amount ?? 0 }}"
                                 placeholder="0.00"
@@ -266,12 +266,12 @@
             <div class="card-body">
                 <div style="display: flex; justify-content: space-between; margin-bottom: 16px;">
                     <span style="color: #64748b;">Order Status</span>
-                    <span class="badge badge-{{ $order->status_badge }}">{{ $order->status_label }}</span>
+                    <span class="badge badge-{{ $order->status->value ?? 'secondary' }}">{{ $ucfirst(is_object($order->status) ? $order->status->value : $order->status) }}</span>
                 </div>
                 
                 <div style="display: flex; justify-content: space-between; margin-bottom: 16px;">
                     <span style="color: #64748b;">Payment Status</span>
-                    <span class="badge badge-{{ $order->payment_status_badge }}">{{ ucfirst(str_replace('_', ' ', $order->payment_status)) }}</span>
+                    <span class="badge badge-{{ $order->payment_status->value ?? 'secondary' }}">{{ ucfirst($order->payment_status->value ?? $order->payment_status) }}</span>
                 </div>
                 
                 <div style="display: flex; justify-content: space-between; margin-bottom: 16px;">
@@ -284,7 +284,7 @@
                 </div>
                 <div style="display: flex; justify-content: space-between; margin-bottom: 16px;">
                     <span style="color: #64748b;">Vendor Payable</span>
-                    <span style="font-weight: 700; color: #15803d;">BDT {{ number_format($order->payout_payable_amount, 2) }}</span>
+                    <span style="font-weight: 700; color: #15803d;">BDT {{ number_format($(($order->grand_total ?? 0) - ($order->commission_amount ?? 0)), 2) }}</span>
                 </div>
                 @if($order->delivery_zone)
                     <div style="display: flex; justify-content: space-between; margin-bottom: 16px;">
@@ -308,11 +308,11 @@
             <div class="card-body">
                 <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
                     <div style="width: 48px; height: 48px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px;">
-                        {{ substr($order->user->name ?? 'G', 0, 1) }}
+                        {{ substr($order->buyer->name ?? 'G', 0, 1) }}
                     </div>
                     <div>
-                        <p style="font-weight: 600;">{{ $order->user->name ?? 'Guest' }}</p>
-                        <p style="font-size: 13px; color: #64748b;">{{ $order->user->email ?? $order->shipping_email }}</p>
+                        <p style="font-weight: 600;">{{ $order->buyer->name ?? 'Guest' }}</p>
+                        <p style="font-size: 13px; color: #64748b;">{{ $order->buyer->email ?? $order->shipping_email }}</p>
                     </div>
                 </div>
             </div>
@@ -341,9 +341,9 @@
                 <h3>Vendor</h3>
             </div>
             <div class="card-body">
-                <p style="font-weight: 600;">{{ $order->vendor->shop_name ?? 'N/A' }}</p>
-                @if($order->vendor)
-                    <p style="font-size: 13px; color: #64748b;">{{ $order->vendor->email }}</p>
+                <p style="font-weight: 600;">{{ $order->supplierOrders->first()?->supplier?->company_name ?? 'N/A' }}</p>
+                @if($order->supplierOrders->first()?->supplier)
+                    <p style="font-size: 13px; color: #64748b;">{{ $order->supplierOrders->first()?->supplier?->user?->email }}</p>
                     <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #e2e8f0;">
                         <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
                             <span style="color: #64748b;">Commission</span>
@@ -351,7 +351,7 @@
                         </div>
                         <div style="display: flex; justify-content: space-between;">
                             <span style="color: #64748b;">Vendor Earning</span>
-                            <span style="font-weight: 600; color: #16a34a;">BDT {{ number_format($order->vendor_earning) }}</span>
+                            <span style="font-weight: 600; color: #16a34a;">BDT {{ number_format($order->supplierOrders->first()?->supplier_earning) }}</span>
                         </div>
                     </div>
                 @endif

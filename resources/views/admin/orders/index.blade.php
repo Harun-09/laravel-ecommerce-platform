@@ -127,18 +127,18 @@
                         </td>
                         <td>
                             <div>
-                                <p style="font-weight: 500;">{{ $order->user->name ?? 'Guest' }}</p>
+                                <p style="font-weight: 500;">{{ $order->buyer->name ?? 'Guest' }}</p>
                                 <p style="font-size: 13px; color: #64748b;">{{ $order->shipping_phone }}</p>
                             </div>
                         </td>
-                        <td>{{ $order->vendor->shop_name ?? 'N/A' }}</td>
+                        <td>{{ $order->supplierOrders->first()?->supplier?->company_name ?? 'N/A' }}</td>
                         <td>{{ $order->items->count() }} items</td>
-                        <td style="font-weight: 600;">৳{{ number_format($order->total) }}</td>
+                        <td style="font-weight: 600;">৳{{ number_format($order->grand_total) }}</td>
                         <td>
-                            <span class="badge badge-{{ $order->payment_status_badge }}">{{ ucfirst(str_replace('_', ' ', $order->payment_status)) }}</span>
+                            <span class="badge badge-{{ $order->payment_status->value ?? 'secondary' }}">{{ ucfirst($order->payment_status->value ?? $order->payment_status) }}</span>
                         </td>
                         <td>
-                            <span class="badge badge-{{ $order->status_badge }}">{{ $order->status_label }}</span>
+                            <span class="badge badge-{{ $order->status->value ?? 'secondary' }}">{{ ucfirst($order->status->value ?? $order->status ?? 'Unknown') }}</span>
                         </td>
                         <td style="color: #64748b; font-size: 13px;">{{ $order->created_at->format('M d, Y') }}</td>
                         <td>
