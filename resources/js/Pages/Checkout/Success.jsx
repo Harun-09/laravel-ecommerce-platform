@@ -44,7 +44,7 @@ export default function CheckoutSuccess({
                                 <span className={`flex h-9 w-9 items-center justify-center rounded-full ${isPaid ? 'bg-emerald-600' : 'bg-amber-500'} text-white`}>
                                     {isPaid ? '✓' : '•'}
                                 </span>
-                                PlexusBiz checkout
+                                NovaMart checkout
                             </div>
 
                             <div className="space-y-3">

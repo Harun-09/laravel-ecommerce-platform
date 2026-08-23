@@ -48,7 +48,7 @@ class WorkflowActionExecutor
     private function createNotification(array $config, array $payload): array
     {
         $receiverId = (int) data_get($config, 'receiver_id', data_get($payload, 'buyer.id', 0));
-        $subject = (string) ($config['subject'] ?? 'PlexusBiz notification');
+        $subject = (string) ($config['subject'] ?? 'NovaMart notification');
         $body = (string) ($config['message'] ?? $config['body'] ?? 'A workflow notification was created.');
 
         $receiver = $receiverId > 0 ? \App\Models\User::query()->find($receiverId) : null;
@@ -209,7 +209,7 @@ class WorkflowActionExecutor
     private function sendEmail(array $config, array $payload): array
     {
         $to = (string) data_get($payload, (string) ($config['to_path'] ?? 'buyer.email'));
-        $subject = (string) ($config['subject'] ?? 'PlexusBiz notification');
+        $subject = (string) ($config['subject'] ?? 'NovaMart notification');
         $body = (string) ($config['body'] ?? 'Workflow email action executed.');
         $result = $this->email->send($to, $subject, $body, $payload);
 

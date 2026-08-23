@@ -130,7 +130,7 @@ class AutomationRuleController extends Controller
      */
     private function actionsJson(array $validated): array
     {
-        $subject = trim((string) ($validated['subject'] ?? 'PlexusBiz automation'));
+        $subject = trim((string) ($validated['subject'] ?? 'NovaMart automation'));
         $message = trim((string) ($validated['message'] ?? 'Automation action executed successfully.'));
 
         return collect($validated['action_types'])
@@ -140,7 +140,7 @@ class AutomationRuleController extends Controller
                 $config = match ($type) {
                     WorkflowActionType::SendEmail->value => [
                         'to_path' => 'buyer.email',
-                        'subject' => $subject !== '' ? $subject : 'PlexusBiz automation email',
+                        'subject' => $subject !== '' ? $subject : 'NovaMart automation email',
                         'body' => $message !== '' ? $message : 'Automation email action executed.',
                     ],
                     WorkflowActionType::SendSms->value => [
@@ -148,7 +148,7 @@ class AutomationRuleController extends Controller
                         'body' => $message !== '' ? $message : 'Automation SMS action executed.',
                     ],
                     WorkflowActionType::CreateNotification->value => [
-                        'subject' => $subject !== '' ? $subject : 'PlexusBiz notification',
+                        'subject' => $subject !== '' ? $subject : 'NovaMart notification',
                         'message' => $message !== '' ? $message : 'Automation notification created.',
                     ],
                     WorkflowActionType::NotifySupplier->value => [

@@ -41,13 +41,13 @@ export default function ResetPassword({ token, email }) {
                 <div className="auth-card-brand">
                     <span className="auth-card-brand__mark">
                         <img
-                            src="/images/project-logo.png"
-                            alt="PlexusBiz Automate"
+                            src="/favicon.svg"
+                            alt="NovaMart Automate"
                             className="auth-card-brand__logo"
                         />
                     </span>
                     <span className="auth-card-brand__copy">
-                        <strong>PlexusBiz Automate</strong>
+                        <strong>NovaMart Automate</strong>
                         <span>Password Reset</span>
                     </span>
                 </div>

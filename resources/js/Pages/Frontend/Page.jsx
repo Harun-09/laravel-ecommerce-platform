@@ -3,14 +3,14 @@ import FrontendLayout from '@/Layouts/FrontendLayout';
 
 export default function Page({ page, title, slug }) {
     const isPrivacyPolicy = slug === 'privacy-policy' || title.toLowerCase().includes('privacy');
-    const kicker = isPrivacyPolicy ? 'Privacy and data' : 'PlexusBiz information';
+    const kicker = isPrivacyPolicy ? 'Privacy and data' : 'NovaMart information';
     const intro = isPrivacyPolicy
-        ? 'Understand how PlexusBiz handles the information that helps us provide a dependable marketplace experience.'
+        ? 'Understand how NovaMart handles the information that helps us provide a dependable marketplace experience.'
         : `Everything you need to know about ${title}, presented in one clear place.`;
 
     return (
         <FrontendLayout>
-            <Head title={`${title} | PlexusBiz`} />
+            <Head title={`${title} | NovaMart`} />
 
             <main className="market-page pb-16 sm:pb-20">
                 <section className="market-container pt-8 sm:pt-10">

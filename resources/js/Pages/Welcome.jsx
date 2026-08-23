@@ -178,7 +178,7 @@ export default function Welcome({ auth = {}, canLogin, canRegister, featuredProd
 
     return (
         <FrontendLayout auth={auth} canLogin={canLogin}>
-            <Head title="PlexusBiz | Business marketplace" />
+            <Head title="NovaMart | Business marketplace" />
 
             <main className="overflow-hidden">
                 {/* Hero Banner - Full Width with gradient bleed */}

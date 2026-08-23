@@ -32,7 +32,7 @@ export default function Login({ status, canResetPassword }) {
             registerHero={{
                 eyebrow: 'Business secure access',
                 title: 'Access your operations control center.',
-                lead: 'Sign in to manage teams, workflows, and B2B operations in PlexusBiz Automate.',
+                lead: 'Sign in to manage teams, workflows, and B2B operations in NovaMart Automate.',
             }}
         >
             <Head title="Sign in" />
@@ -41,13 +41,13 @@ export default function Login({ status, canResetPassword }) {
                 <div className="auth-card-brand">
                     <span className="auth-card-brand__mark">
                         <img
-                            src="/images/project-logo.png"
-                            alt="PlexusBiz Automate"
+                            src="/favicon.svg"
+                            alt="NovaMart Automate"
                             className="auth-card-brand__logo"
                         />
                     </span>
                     <span className="auth-card-brand__copy">
-                        <strong>PlexusBiz Automate</strong>
+                        <strong>NovaMart Automate</strong>
                         <span>Business operations portal</span>
                     </span>
                 </div>

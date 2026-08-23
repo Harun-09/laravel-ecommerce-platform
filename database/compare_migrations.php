@@ -22,7 +22,7 @@ $plexusTables = getTables($dir2);
 
 echo "--- Existing E-Commerce Tables ---\n";
 print_r($ecommerceTables);
-echo "\n--- PlexusBiz-Automate Tables ---\n";
+echo "\n--- NovaMart-Automate Tables ---\n";
 print_r($plexusTables);
 
 $intersection = array_intersect($ecommerceTables, $plexusTables);

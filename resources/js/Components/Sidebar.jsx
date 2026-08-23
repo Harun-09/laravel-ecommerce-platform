@@ -197,12 +197,12 @@ export default function Sidebar({ user, currentPath, onNavigate = null }) {
             <div className="flex h-16 items-center border-b border-white/10 px-4">
                 <Link href={route('dashboard')} className="flex items-center gap-3">
                     <img
-                        src="/images/project-logo.png"
-                        alt="PlexusBiz"
+                        src="/favicon.svg"
+                        alt="NovaMart"
                         className="h-10 w-10 rounded-lg bg-white object-cover shadow"
                     />
                     <span className="leading-tight">
-                        <span className="block text-sm font-black text-white">PlexusBiz</span>
+                        <span className="block text-sm font-black text-white">NovaMart</span>
                         <span className="block text-[11px] font-semibold uppercase text-slate-400">
                             e-commerce hub
                         </span>

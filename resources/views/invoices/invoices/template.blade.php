@@ -291,9 +291,9 @@
                 <tr>
                     <td class="brand">
                         <div class="header-card">
-                            <h1>PlexusBiz Automate</h1>
+                            <h1>NovaMart Automate</h1>
                             <p>B2B E-Commerce & Business Automation Platform</p>
-                            <p>Email: support@plexusbiz.com</p>
+                            <p>Email: support@NovaMart.com</p>
                         </div>
                     </td>
                     <td class="invoice-meta">
@@ -397,7 +397,7 @@
         </div>
 
         <div class="footer">
-            <p>Thank you for your business. This invoice was generated automatically by PlexusBiz Automate.</p>
+            <p>Thank you for your business. This invoice was generated automatically by NovaMart Automate.</p>
             <p>For any questions, please contact our support team.</p>
         </div>
         </div>

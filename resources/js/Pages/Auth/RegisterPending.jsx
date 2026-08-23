@@ -29,13 +29,13 @@ export default function RegisterPending({ accountType = '', accountTypes = [] })
                 <div className="auth-card-brand auth-card-brand--visible">
                     <span className="auth-card-brand__mark">
                         <img
-                            src="/images/project-logo.png"
-                            alt="PlexusBiz Automate"
+                            src="/favicon.svg"
+                            alt="NovaMart Automate"
                             className="auth-card-brand__logo"
                         />
                     </span>
                     <span className="auth-card-brand__copy">
-                        <strong>PlexusBiz Automate</strong>
+                        <strong>NovaMart Automate</strong>
                         <span>Application queue</span>
                     </span>
                 </div>

@@ -27,7 +27,7 @@ class HandleInertiaRequests extends Middleware
 
     /**
      * Normalize Inertia page URL payload so browser history never keeps duplicated
-     * subfolder segments like /plexusbiz/public/plexusbiz/public/...
+     * subfolder segments like /NovaMart/public/NovaMart/public/...
      */
     public function handle(Request $request, Closure $next): SymfonyResponse
     {

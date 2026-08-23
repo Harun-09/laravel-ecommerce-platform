@@ -97,7 +97,7 @@ function Header({ auth, canLogin, cartCount }) {
                 <div className="site-container flex items-center justify-between gap-3.5">
                     <div className="flex items-center gap-4 min-w-0">
                         <Link href={route('supplier.apply')} className="text-white font-medium opacity-90 hover:opacity-100 hover:underline whitespace-nowrap">
-                            Sell with PlexusBiz
+                            Sell with NovaMart
                         </Link>
                     </div>
                     <div className="flex items-center gap-3.5 flex-shrink-0">
@@ -118,10 +118,10 @@ function Header({ auth, canLogin, cartCount }) {
                     <div className="flex items-center gap-3.5">
                         <Link href={route('home')} className="text-white no-underline flex items-center gap-3">
                             <span className="grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-white/10 border border-white/20">
-                                <img src="/images/project-logo.png" alt="PlexusBiz" className="h-8 w-8 object-contain" />
+                                <img src="/favicon.svg" alt="NovaMart" className="h-8 w-8 object-contain" />
                             </span>
                             <span className="hidden sm:block">
-                                <span className="block text-base font-black tracking-[-0.045em]">PlexusBiz</span>
+                                <span className="block text-base font-black tracking-[-0.045em]">NovaMart</span>
                                 <span className="block text-[10px] font-bold uppercase tracking-[0.18em] text-white/60">Marketplace</span>
                             </span>
                         </Link>
@@ -142,7 +142,7 @@ function Header({ auth, canLogin, cartCount }) {
                                 type="search"
                                 value={search}
                                 onChange={(event) => setSearch(event.target.value)}
-                                placeholder="Search PlexusBiz products..."
+                                placeholder="Search NovaMart products..."
                                 className="w-full text-[#0f172a] text-[15px] rounded-lg border border-[rgba(2,23,62,0.12)] shadow-[0_1px_3px_rgba(15,23,42,0.08)] transition-all duration-200 focus:border-[#3b82f6] focus:shadow-[0_0_0_3px_rgba(59,130,246,0.2)] outline-none"
                                 style={{ padding: '14px 52px 14px 16px' }}
                             />
@@ -255,9 +255,9 @@ function Footer() {
                     <div className="max-w-sm">
                         <Link href={route('home')} className="inline-flex items-center gap-3 text-white no-underline">
                             <span className="grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-white">
-                                <img src="/images/project-logo.png" alt="PlexusBiz" className="h-8 w-8 object-contain" />
+                                <img src="/favicon.svg" alt="NovaMart" className="h-8 w-8 object-contain" />
                             </span>
-                            <span className="text-lg font-black tracking-[-0.045em]">PlexusBiz</span>
+                            <span className="text-lg font-black tracking-[-0.045em]">NovaMart</span>
                         </Link>
                         <p className="mt-5 text-sm leading-7 text-[#9ca3af]">
                             A focused marketplace for teams that need clear product information, bulk purchasing options, and a direct path to a quote.
@@ -283,7 +283,7 @@ function Footer() {
                     ))}
                 </div>
                 <div className="footer-bottom flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                    <p>&copy; {new Date().getFullYear()} PlexusBiz Automate. Built for purposeful buying.</p>
+                    <p>&copy; {new Date().getFullYear()} NovaMart Automate. Built for purposeful buying.</p>
                     <p>Catalog &middot; MOQ pricing &middot; RFQ support</p>
                 </div>
             </div>

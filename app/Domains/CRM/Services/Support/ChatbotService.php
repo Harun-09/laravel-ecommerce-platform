@@ -33,7 +33,7 @@ class ChatbotService
         }
 
         if (str_contains($message, 'hello') || str_contains($message, 'hi')) {
-            return "Hello! Welcome to PlexusBiz. How can I help you with your B2B purchasing today?";
+            return "Hello! Welcome to NovaMart. How can I help you with your B2B purchasing today?";
         }
 
         return "Thank you for your message. An agent will review your inquiry shortly. In the meantime, you can explore our catalog.";

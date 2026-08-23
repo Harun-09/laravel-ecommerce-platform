@@ -23,13 +23,13 @@ export default function Guest({ children, variant = 'login', registerHero = {} }
                         <Link href="/" className="auth-brand auth-brand--register" aria-label="Go to homepage">
                             <span className="auth-brand__mark auth-brand__mark--register">
                                 <img
-                                    src="/images/project-logo.png"
-                                    alt="PlexusBiz Automate"
+                                    src="/favicon.svg"
+                                    alt="NovaMart Automate"
                                     className="auth-brand__logo"
                                 />
                             </span>
                             <span className="auth-brand__copy">
-                                <strong>PlexusBiz Automate</strong>
+                                <strong>NovaMart Automate</strong>
                                 <span>Business automation workspace</span>
                             </span>
                         </Link>
@@ -91,13 +91,13 @@ export default function Guest({ children, variant = 'login', registerHero = {} }
                         <Link href="/" className="auth-brand" aria-label="Go to homepage">
                             <span className="auth-brand__mark">
                                 <img
-                                    src="/images/project-logo.png"
-                                    alt="PlexusBiz Automate"
+                                    src="/favicon.svg"
+                                    alt="NovaMart Automate"
                                     className="auth-brand__logo"
                                 />
                             </span>
                             <span className="auth-brand__copy">
-                                <strong>PlexusBiz Automate</strong>
+                                <strong>NovaMart Automate</strong>
                                 <span>Business automation workspace</span>
                             </span>
                         </Link>

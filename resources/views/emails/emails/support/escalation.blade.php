@@ -114,7 +114,7 @@
             <div class="message-section">{{ $description }}</div>
         </div>
         <div class="footer">
-            Sent automatically by PlexusBiz Automate Support System.
+            Sent automatically by NovaMart Automate Support System.
         </div>
     </div>
 </body>

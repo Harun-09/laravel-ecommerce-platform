@@ -149,7 +149,7 @@ export default function Edit({ auth, flash, errors, template, campaigns = [], ch
                                             value={data.subject}
                                             onChange={(event) => setData('subject', event.target.value)}
                                             className="input"
-                                            placeholder="Welcome to PlexusBiz, {{ customer_name }}"
+                                            placeholder="Welcome to NovaMart, {{ customer_name }}"
                                         />
                                     </Field>
 
@@ -158,7 +158,7 @@ export default function Edit({ auth, flash, errors, template, campaigns = [], ch
                                             value={data.body}
                                             onChange={(event) => setData('body', event.target.value)}
                                             className="input min-h-[180px] resize-y"
-                                            placeholder="Hello {{ customer_name }}, welcome to PlexusBiz."
+                                            placeholder="Hello {{ customer_name }}, welcome to NovaMart."
                                             required
                                         />
                                     </Field>

@@ -61,13 +61,13 @@ export default function Register({ accountTypes = [] }) {
                 <div className="auth-card-brand auth-card-brand--visible">
                     <span className="auth-card-brand__mark">
                         <img
-                            src="/images/project-logo.png"
-                            alt="PlexusBiz Automate"
+                            src="/favicon.svg"
+                            alt="NovaMart Automate"
                             className="auth-card-brand__logo"
                         />
                     </span>
                     <span className="auth-card-brand__copy">
-                        <strong>PlexusBiz Automate</strong>
+                        <strong>NovaMart Automate</strong>
                         <span>Enterprise signup</span>
                     </span>
                 </div>
@@ -149,7 +149,7 @@ export default function Register({ accountTypes = [] }) {
                                 value={data.company_name}
                                 className="auth-input"
                                 autoComplete="organization"
-                                placeholder="PlexusBiz Automate"
+                                placeholder="NovaMart Automate"
                                 onChange={(e) => setData('company_name', e.target.value)}
                                 required
                             />

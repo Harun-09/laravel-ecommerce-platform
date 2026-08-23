@@ -128,12 +128,12 @@ export default function Form({
                                 </div>
 
                                 <div className="grid gap-5 sm:grid-cols-2">
-                                    <Field label="Account Name" error={errors.name} hint="Use a human-friendly label such as PlexusBiz Facebook.">
+                                    <Field label="Account Name" error={errors.name} hint="Use a human-friendly label such as NovaMart Facebook.">
                                         <input
                                             value={data.name}
                                             onChange={(event) => setData('name', event.target.value)}
                                             className="input"
-                                            placeholder="PlexusBiz Facebook"
+                                            placeholder="NovaMart Facebook"
                                             required
                                         />
                                     </Field>
@@ -143,7 +143,7 @@ export default function Form({
                                             value={data.handle}
                                             onChange={(event) => setData('handle', event.target.value)}
                                             className="input"
-                                            placeholder="@plexusbiz"
+                                            placeholder="@NovaMart"
                                         />
                                     </Field>
                                 </div>

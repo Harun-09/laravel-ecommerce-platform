@@ -42,7 +42,7 @@ function ProductCard({ product, currency }) {
             </Link>
 
             <div className="content">
-                <div className="vendor">{product.supplier?.company_name || 'PlexusBiz supplier'}</div>
+                <div className="vendor">{product.supplier?.company_name || 'NovaMart supplier'}</div>
                 <h3>
                     <Link href={route('products.show', product.slug)}>{product.name}</Link>
                 </h3>

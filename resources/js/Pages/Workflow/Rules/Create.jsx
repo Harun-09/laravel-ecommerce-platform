@@ -28,7 +28,7 @@ export default function Create({ auth, flash, errors, triggers = [], actions = [
         condition_operator: operators[0] || 'equals',
         condition_value: '',
         action_types: ['send_email', 'send_sms'].filter((type) => actions.includes(type)),
-        subject: 'Your PlexusBiz order is confirmed',
+        subject: 'Your NovaMart order is confirmed',
         message: 'Order confirmation automation executed successfully.',
     });
 

@@ -37,7 +37,7 @@ class StripeGatewayService
 
         $this->webhookSecret = (string) ($config['webhook_secret'] ?? '');
         $this->currency = strtolower((string) ($config['currency'] ?? 'bdt'));
-        $this->displayName = trim((string) ($config['display_name'] ?? 'PlexusBiz'));
+        $this->displayName = trim((string) ($config['display_name'] ?? 'NovaMart'));
         $this->buttonColor = $this->normalizeHexColor($config['button_color'] ?? null);
         $this->backgroundColor = $this->normalizeHexColor($config['background_color'] ?? null);
         $this->borderStyle = $this->normalizeOptionalString($config['border_style'] ?? null);
@@ -95,7 +95,7 @@ class StripeGatewayService
             'locale' => 'auto',
             'billing_address_collection' => 'auto',
             'phone_number_collection[enabled]' => 'true',
-            'custom_text[submit][message]' => 'Secure card payment for your PlexusBiz order.',
+            'custom_text[submit][message]' => 'Secure card payment for your NovaMart order.',
             'client_reference_id' => (string) $payment->id,
             'metadata[order_id]' => (string) $order->id,
             'metadata[order_number]' => (string) $order->order_number,

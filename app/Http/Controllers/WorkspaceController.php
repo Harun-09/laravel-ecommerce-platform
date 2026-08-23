@@ -2008,7 +2008,7 @@ class WorkspaceController extends Controller
         }
 
         // Send Email
-        $adminEmail = config('mail.from.address', 'admin@plexusbiz.com');
+        $adminEmail = config('mail.from.address', 'admin@NovaMart.com');
         Mail::to($adminEmail)->send(new SupportEscalationMail(
             $user,
             $validated['subject'],

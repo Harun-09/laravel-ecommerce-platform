@@ -23,7 +23,7 @@ const footerSections = [
         title: 'Contact',
         links: [
             { label: 'Dhaka, Bangladesh', text: true },
-            { label: 'support@plexusbiz.com', href: 'mailto:support@plexusbiz.com' },
+            { label: 'support@NovaMart.com', href: 'mailto:support@NovaMart.com' },
         ],
     },
     {
@@ -46,8 +46,8 @@ export default function FooterSimple() {
                         <Link href="/" className="group inline-flex items-center gap-4">
                             <span className="grid h-16 w-16 shrink-0 place-items-center rounded-[22px] border border-white/15 bg-white p-2 shadow-[0_18px_42px_-26px_rgba(0,0,0,0.45)] transition group-hover:scale-[1.02]">
                                 <img
-                                    src="/images/project-logo.png"
-                                    alt="PlexusBiz Automate"
+                                    src="/favicon.svg"
+                                    alt="NovaMart Automate"
                                     className="h-full w-full rounded-[16px] object-cover"
                                 />
                             </span>
@@ -57,7 +57,7 @@ export default function FooterSimple() {
                                 </span>
                                 <span className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
                                     <span className="text-[2rem] font-black tracking-[-0.07em] text-white transition group-hover:text-[#ffd59a] sm:text-[2.2rem]">
-                                        PlexusBiz
+                                        NovaMart
                                     </span>
                                     <span className="text-[11px] font-semibold uppercase tracking-[0.38em] text-white/65">
                                         Commerce Hub
@@ -102,7 +102,7 @@ export default function FooterSimple() {
                     </div>
 
                     <div className="mt-8 border-t border-white/20 pt-4 text-center text-sm text-white/90">
-                        &copy; 2003-{new Date().getFullYear()} PlexusBiz Automate. All rights reserved.
+                        &copy; 2003-{new Date().getFullYear()} NovaMart Automate. All rights reserved.
                     </div>
                 </div>
             </div>

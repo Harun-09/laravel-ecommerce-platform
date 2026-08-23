@@ -20,7 +20,7 @@ class PageController extends Controller
                 'title' => $title,
                 'slug' => (string) $slug,
                 'content' => sprintf(
-                    '<p>%s information is available in this portal. For operational support, please use the Help Center or contact PlexusBiz support.</p><p>This page is currently served as a general information placeholder.</p>',
+                    '<p>%s information is available in this portal. For operational support, please use the Help Center or contact NovaMart support.</p><p>This page is currently served as a general information placeholder.</p>',
                     e($title),
                 ),
                 'meta_title' => $title,

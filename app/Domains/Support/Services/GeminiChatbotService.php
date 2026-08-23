@@ -24,7 +24,7 @@ class GeminiChatbotService
 
         $faqContext = $faqs->map(fn($faq) => "Q: {$faq->question}\nA: {$faq->answer}")->join("\n\n");
 
-        $systemInstruction = "You are a helpful customer support chatbot for PlexusBiz Automate.
+        $systemInstruction = "You are a helpful customer support chatbot for NovaMart Automate.
 Use the following FAQ knowledge base to answer the user's question.
 If the user's question cannot be answered using the FAQs, or if they explicitly ask to talk to a human or create a ticket, respond exactly with the phrase: 'ACTION_CREATE_TICKET'.
 Otherwise, provide a friendly and concise answer based ONLY on the FAQs.
