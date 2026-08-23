@@ -1,5 +1,5 @@
 import './bootstrap';
-import './layouts/frontend-layout';
+import './Layouts/frontend-layout';
 
 const routeName = document.body?.dataset.routeName || '';
 const loadedModules = new Set();

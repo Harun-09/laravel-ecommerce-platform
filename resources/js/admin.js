@@ -1,2 +1,2 @@
 import './bootstrap';
-import './layouts/admin-layout';
+import './Layouts/admin-layout';
