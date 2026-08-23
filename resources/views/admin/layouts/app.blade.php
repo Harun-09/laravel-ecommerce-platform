@@ -7,6 +7,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ $title ?? 'Dashboard' }} - Admin | NovaMart</title>
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
     <link rel="stylesheet" href="{{ asset('assets') }}/vendor/fontawesome/css/all.min.css">
     @vite(['resources/css/admin.css', 'resources/js/admin.js'])
